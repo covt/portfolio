@@ -23,7 +23,6 @@ $muli: 'Muli', sans-serif;
 // scss
 
 body {
-  padding: 50px;
   font: 14px;
   font-family: muli;
 }
@@ -213,4 +212,744 @@ div.code {
   @include outer-container();
   padding:0.5em;
   text-align: center;
+}
+
+// HERO
+
+.hero {  
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $hero-background-top: #7F99BE; 
+  $hero-background-bottom: #20392B;
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: 'https:
+//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+
+  .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+
+    .hero-copy {
+      text-align: center;
+      
+      h1 {
+        color: $hero-color;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      }
+
+      p {
+        color: $hero-color;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto; 
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}
+
+
+ // NAVBAR
+ 
+.centered-navigation {
+  $base-border-radius: 3px !default;
+  $dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $centered-navigation-padding: 1em;
+  $centered-navigation-logo-height: 2em;
+  $centered-navigation-background: #E7F1EC;
+  $centered-navigation-color: transparentize($base-font-color, 0.3);
+  $centered-navigation-color-hover: $base-font-color;
+  $centered-navigation-height: 60px;
+  $centered-navigation-item-padding: 1em;
+  $centered-navigation-submenu-padding: 1em;
+  $centered-navigation-submenu-width: 12em;
+  $centered-navigation-item-nudge: 2.2em;
+  $horizontal-bar-mode: $large-screen;
+
+  background-color: $centered-navigation-background;
+  border-bottom: 1px solid darken($centered-navigation-background, 6%);
+  min-height: $centered-navigation-height;
+  width: 100%;
+  z-index: 9999;
+
+  
+// Mobile view
+
+  .mobile-logo {
+    display: inline;
+    float: left;
+    max-height: $centered-navigation-height;
+    padding-left: $centered-navigation-padding;
+
+    img {
+      max-height: $centered-navigation-height;
+      opacity: .6;
+      padding: .8em 0;
+    }
+
+    @include media($horizontal-bar-mode) {
+      display: none;
+    }
+  }
+
+  .centered-navigation-mobile-menu {
+    color: $centered-navigation-color;
+    display: block;
+    float: right;
+    line-height: $centered-navigation-height;
+    margin: 0;
+    padding-right: $centered-navigation-submenu-padding;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include media ($horizontal-bar-mode) {
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+      color: $centered-navigation-color-hover;
+    }
+  }
+
+  
+// Nav menu
+
+  .centered-navigation-wrapper {
+    @include outer-container;
+    @include clearfix;
+    position: relative;
+    z-index: 999;
+  }
+
+  ul.centered-navigation-menu {
+    -webkit-transform-style: preserve-3d; 
+// stop webkit flicker
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 99999;
+
+    &.show {
+      display: block;
+    }
+
+    @include media ($horizontal-bar-mode) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  
+// The nav items
+
+  .nav-link:first-child {
+    @include media($horizontal-bar-mode) {
+      margin-left: $centered-navigation-item-nudge;
+    }
+  }
+
+  ul li.nav-link {
+    background: $centered-navigation-background;
+    display: block;
+    line-height: $centered-navigation-height;
+    overflow: hidden;
+    padding-right: $centered-navigation-submenu-padding;
+    text-align: right;
+    width: 100%;
+    z-index: 9999;
+
+    a {
+      color: $centered-navigation-color;
+      display: inline-block;
+      outline: none;
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        color: $centered-navigation-color-hover;
+      }
+    }
+
+    @include media($horizontal-bar-mode) {
+      background: transparent;
+      display: inline;
+      line-height: $centered-navigation-height;
+
+      a {
+        padding-right: $centered-navigation-item-padding;
+      }
+    }
+  }
+
+  li.logo.nav-link {
+    display: none;
+    line-height: 0;
+
+    @include media($large-screen) {
+      display: inline;
+    }
+  }
+
+  .logo img {
+    margin-bottom: -$centered-navigation-logo-height / 3;
+    max-height: $centered-navigation-logo-height;
+    opacity: 0.6;
+  }
+
+  
+// Sub menus
+
+  li.more.nav-link {
+    padding-right: 0;
+
+    @include media($large-screen) {
+      padding-right: $centered-navigation-submenu-padding;
+    }
+
+    > ul > li:first-child a  {
+      padding-top: 1em;
+    }
+
+    a {
+      margin-right: $centered-navigation-submenu-padding;
+    }
+
+    > a {
+      padding-right: 0.6em;
+    }
+
+    > a:after {
+      @include position(absolute, auto -0.4em auto auto);
+      color: $centered-navigation-color;
+      content: "\25BE";
+    }
+  }
+
+  li.more {
+    overflow: visible;
+    padding-right: 0;
+
+    a {
+      padding-right: $centered-navigation-submenu-padding;
+    }
+
+    > a {
+      padding-right: 1.6em;
+      position: relative;
+
+      @include media($large-screen) {
+        margin-right: $centered-navigation-submenu-padding;
+      }
+
+      &:after {
+        content: "›";
+        font-size: 1.2em;
+        position: absolute;
+        right: $centered-navigation-submenu-padding / 2;
+      }
+    }
+
+    &:focus > .submenu,
+    &:hover > .submenu {
+      display: block;
+    }
+
+    @include media($horizontal-bar-mode) {
+      padding-right: $centered-navigation-submenu-padding;
+      position: relative;
+    }
+  }
+
+  ul.submenu {
+    display: none;
+    padding-left: 0;
+
+    @include media($horizontal-bar-mode) {
+      left: -$centered-navigation-submenu-padding;
+      position: absolute;
+      top: 1.5em;
+    }
+
+    .submenu {
+      @include media($horizontal-bar-mode) {
+        left: $centered-navigation-submenu-width - 0.2em;
+        top: 0;
+      }
+    }
+
+    li {
+      display: block;
+      padding-right: 0;
+
+      @include media($horizontal-bar-mode) {
+        line-height: $centered-navigation-height / 1.3;
+
+        &:first-child > a {
+          border-top-left-radius: $base-border-radius;
+          border-top-right-radius: $base-border-radius;
+        }
+
+        &:last-child > a {
+          border-bottom-left-radius: $base-border-radius;
+          border-bottom-right-radius: $base-border-radius;
+          padding-bottom: .7em;
+        }
+      }
+
+      a {
+        background-color: darken($centered-navigation-background, 3%);
+        display: inline-block;
+        text-align: right;
+        text-decoration: none;
+        width: 100%;
+
+        @include media($horizontal-bar-mode) {
+          background-color: $centered-navigation-background;
+          padding-left: $centered-navigation-submenu-padding;
+          text-align: left;
+          width: $centered-navigation-submenu-width;
+        }
+      }
+    }
+  }
+}
+
+
+// GRID ITEMS
+
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+.grid-items-lines {
+  $base-background-color: white !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $grid-items-background: $base-background-color;
+  $grid-item-background: $base-background-color;
+  $grid-item-border: 1px solid transparentize($base-font-color, 0.8); 
+  $grid-item-columns: 4;
+  $grid-item-big-columns: 8;
+  $grid-item-color: $base-font-color;
+  $grid-item-height: 14em;
+
+  @include clearfix;
+  position: relative;
+    
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    background: $grid-item-background;
+    border-bottom: $grid-item-border;
+    border-right: $grid-item-border;
+    cursor: pointer;
+    float: left;
+    height: $grid-item-height;
+    overflow: hidden;
+    outline: none;
+    padding: 2em;
+    text-decoration: none;
+    width: 100%;
+
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-columns);
+    }
+
+    &:focus,
+    &:hover {
+      background: transparentize($grid-item-color, 0.95);
+    }
+  }
+
+  .grid-item img {
+      display: block;
+      height: 2.5em;
+      margin-bottom: 1.2em;
+      opacity: 0.2;
+    }
+
+  .grid-item h1 {
+      color: $grid-item-color;
+      font-size: 1.3em;
+      margin-bottom: 0.4em;
+    }
+
+  .grid-item p {
+      color: transparentize($grid-item-color, 0.4);
+      line-height: 1.5em;
+      
+      @include media($medium-screen) {
+        max-width: 70%;
+      }
+    }
+
+  .grid-item-big {
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-big-columns);
+    }
+    p {
+      @include media($medium-screen) {
+        max-width: 60%;
+      }  
+    }
+  }
+
+  // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+  .bottom-cover {
+    background: $grid-items-background;
+    bottom: 0px;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .right-cover {
+    background: $grid-items-background;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    width: 4px;
+  }
+}
+
+// SIDE IMAGE
+
+.side-image {  
+  $base-line-height: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $side-image-background-top: #B5EBEB;
+  $side-image-background-bottom: #5DAC5D;
+  $side-image-content-background: #F9F9F9;
+  $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
+
+  background: $side-image-content-background;
+
+  @include media($large-screen) {
+    @include row(table);
+  }
+
+  .images-wrapper {
+    @include background(url('https:
+//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    background-color: $side-image-background-top;
+    background-size: cover;
+    border-bottom: $side-image-border;
+    display: block;
+    min-height: 12em;
+    padding: 3em;
+
+    @include media($large-screen) {
+      @include span-columns(4);
+      background-position: bottom;
+      background-size: cover;
+      border-right: $side-image-border;
+    }
+  }
+
+  .side-image-content {
+    @include span-columns(12);
+    padding: 1em 1em 4em 1em;
+
+    @include media($large-screen) {
+      @include span-columns(8);
+      padding: 4em 4em 8em 4em;
+    }
+
+    h1 {
+      margin-bottom: 0.9em;
+    }
+
+    h4 {
+      background: #BBB;
+      color: white;
+      display: inline-block;
+      font-size: 0.75em;
+      margin-bottom: 1.3em;
+      padding: 3px 8px;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $base-font-color;
+      line-height: $base-line-height;
+      margin-bottom: 3em;
+    }
+  }
+
+  @include reset-display();
+}
+
+
+// DEVICE 
+
+.device-background {
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $device-padding-vertical: 5em;
+  $device-padding-horizontal: 0.4em;
+  $device-screen-width: 14em;
+  $device-screen-height: 25em;
+  $device-background: darken(gray, 40%);
+  $device-backside-background: darken($device-background, 10%);
+  $device-text-color: white;
+  $device-background-top: #162C4C; 
+  $device-background-bottom: #0A120D;
+  $gradient-angle: 10deg;
+  $device-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+  $device-screen-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/cosmin_capitanu_screen.jpg';
+
+  @include background(url($device-image), linear-gradient($gradient-angle, $device-background-bottom, $device-background-top), no-repeat $device-background-top scroll);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20em;
+  width: 100%;
+
+  .device-text {
+    padding: 2em;
+
+    @include media($large-screen) {
+      float: left;
+      max-width: 50%;
+      padding: 4em;
+    }
+
+    h4 {
+      border-bottom: 1px solid transparentize($device-text-color, 0.7);
+      color: $device-text-color;
+      font-size: 1.5em;
+      margin: 0 0 0.5em 0;
+      padding-bottom: 0.5em;
+    }
+
+    p {
+      color: $device-text-color;
+      line-height: 1.5em;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .device {
+    display: none;
+    position: relative;
+
+    @include media($large-screen) {
+      @include transform(
+        perspective(800px) 
+        translateX(0px) 
+        translateY(-100px) 
+        translateZ(50px) 
+        rotateX(0deg) 
+        rotateY(-20deg) 
+        rotateZ(-0deg));
+      background: $device-background;
+      border-radius: 2em;
+      box-shadow: 
+        1px 0px lighten($device-backside-background, 20%), 
+        4px 0px lighten($device-backside-background, 2%),
+        7px 0px $device-backside-background,
+        10px 0px $device-backside-background,
+        13px 0px $device-backside-background;
+      display: block;
+      float: right;
+      margin-bottom: -12em;
+      margin-right: 5em;
+      padding: $device-padding-vertical 0;
+      width: $device-screen-width + (2 * $device-padding-horizontal);
+      z-index: 99999;
+
+      .screen {
+        @include size($device-screen-width $device-screen-height);
+        background-image: url($device-screen-image);
+        background-size: cover;
+        border-radius: 0.2em;
+        box-shadow: inset 0 1px 8px transparentize(black, 0.5);
+        margin: auto;
+      }
+    }
+  }
+}
+
+// BULLETS & VALUE PROPS
+
+.bullets {
+  $base-line-height: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  $icon-bullet-size: 3.5em;
+
+  @include display(flex);
+  @include flex-wrap(wrap);
+  margin-bottom: $base-line-height;
+  margin: 1em;
+  overflow: auto;
+  padding: 0;
+
+  .bullet {
+    @include flex-basis(20em);
+    @include flex-grow(1);
+  }
+
+  .bullet-icon {
+    background: $action-color;
+    border-radius: 50%;
+    float: left;
+    height: $icon-bullet-size;
+    padding: $icon-bullet-size / 4;
+    width: $icon-bullet-size;
+  }
+
+  .bullet-icon-1 {
+    background: $action-color;
+  }
+
+  .bullet-icon-2 {
+    background: adjust-hue($action-color, -50%);
+  }
+
+  .bullet-icon-3 {
+    background: adjust-hue($action-color, -140%);
+  }
+
+  .bullet-content {
+    margin-left: $icon-bullet-size * 1.4;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    border-bottom: 1px solid transparentize($base-font-color, 0.8);
+    display: inline-block;
+    font-size: $icon-bullet-size / 2.5;
+    margin: 0 0 ($icon-bullet-size / 6) 0;
+    padding-top: $icon-bullet-size / 7;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  p {
+    color: $base-font-color;
+    line-height: $base-line-height;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+
+
+// FOOTER
+
+.footer {
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $footer-background: desaturate(darken($action-color, 20%), 30%);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+  background: $footer-background;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+
+  .footer-logo {
+    margin-bottom: 2em;
+    text-align: center;
+
+    img {
+      height: 3em;
+    }
+  } 
+
+  .footer-links {
+    @include display(flex);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    margin-bottom: $base-spacing;
+  }
+
+  ul {
+    @include flex-basis(13em);
+    @include flex-shrink(0);
+    margin-bottom: $base-spacing * 2;
+    padding: 0;
+  }
+
+  li {
+    line-height: 1.5em;
+    list-style: none;
+    text-align: center;
+  }
+
+  li a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  li h3 {
+    color: $footer-color;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+  }  
+
+  hr {
+    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    margin: 0 auto $base-spacing;
+    width: 12em;
+  }
+
+  p {
+    color: $footer-disclaimer-color;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center;
+  }
 }
