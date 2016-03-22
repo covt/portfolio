@@ -8,8 +8,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  font: 14px;
-  font-family: muli; }
+  font-family: muli;
+  margin: 0px; }
 
 a {
   color: #00B7FF; }
