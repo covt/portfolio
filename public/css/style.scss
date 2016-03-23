@@ -9,6 +9,11 @@
 $ovo: 'Ovo', serif;
 $muli: 'Muli', sans-serif;
 
+
+// color variables
+$primary: #71B280;
+$secondary: #134E5E;
+
 // functions 
 
 // h1-6 headings
@@ -274,6 +279,132 @@ div.code {
 }
 
 
+// DYNAMIC HEADER
+.image-gradient-dynamic {
+  $image-gradient-color-top: grey; 
+  $transparency-top: 0.9;
+  $image-gradient-color-bottom: white; 
+  $transparency-bottom: 0.6;
+  $vertical-angle: 0deg;
+  $image-gradient-color-left: white; 
+  $transparency-left: 0.8;
+  $image-gradient-color-right: white; 
+  $transparency-right: 0.8;
+  $horizontal-angle: 90deg;
+  
+  line-height: 0;
+  position: relative;
+  height:100vh;
+  width: 100%;
+  
+  blue {
+      color: #secondary;
+        -o-transition: all 1s ease-in;
+        -ms-transition: all 1s ease-in;
+        -moz-transition: all 1s ease-in;
+        -webkit-transition: all 1s ease-in;
+        transition: all 1s ease-in;
+  }
+  
+  blue:hover {
+      color: $primary;
+  }
+  
+  green {
+      color: $primary;
+        -o-transition: all .75s ease-in;
+        -ms-transition: all .75s ease-in;
+        -moz-transition: all .75s ease-in;
+        -webkit-transition: all .75s ease-in;
+        transition: all .75s ease-in;
+  }
+  
+  green:hover {
+      color: $secondary;
+  }
+
+  img {
+   height: auto;
+   left: 0; 
+   position: relative;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+  }
+
+  .copy {
+    @include transform(translate(-50%, -50%));
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    z-index: 999;
+    
+    h1 {
+        font-size: 2.5em;
+        line-height: 1em;
+        position: relative;
+    }
+
+    p {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      padding: 1em 2em;
+      position: relative;
+    }
+  }
+
+  .overlay {
+    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top), 
+      transparentize($image-gradient-color-bottom, $transparency-bottom));
+    display: block;
+    @include position(absolute, 0px 0px 0px 0px);
+
+    &:after {
+      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left), 
+        transparentize($image-gradient-color-right, $transparency-right));
+      @include position(absolute, 0px 0px 0px 0px);
+      content: '';
+      display: block;
+    }
+  }
+}
+
+// PARALLAX
+$parallax-window-height: 30em;
+$parallax-background-height: $parallax-window-height * 2;
+
+.parallax-window {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.parallax-static-content {
+  color: #9A9A8A;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: beige;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
+// Based on http://codepen.io/skeurentjes/
+
+
  // NAVBAR
  
 .centered-navigation {
@@ -283,7 +414,7 @@ div.code {
   $base-font-color: $dark-gray !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #E7F1EC;
+  $centered-navigation-background: white;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;
@@ -952,4 +1083,36 @@ div.code {
     max-width: 35em;
     text-align: center;
   }
+}
+
+// ICONS
+.arrow {
+    display:inline-block;
+    width:18px;
+    height:18px;
+    line-height:21px;
+    border-top:5px solid #aaa;
+    border-right:5px solid #aaa;
+    -ms-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+.arrow-down {
+    -ms-transform:rotate(135deg);
+    -moz-transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    transform:rotate(135deg);
+}
+.arrow-left {
+    -ms-transform:rotate(225deg);
+    -moz-transform:rotate(225deg);
+    -webkit-transform:rotate(225deg);
+    transform:rotate(225deg);
+}
+.arrow-up{
+    -ms-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-45deg);
 }

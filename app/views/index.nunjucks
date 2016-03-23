@@ -1,66 +1,19 @@
 {% extends 'layout.nunjucks' %}
 
 {% block content %}
-<header class="centered-navigation" role="banner">
-  <div class="centered-navigation-wrapper">
-    <a href="javascript:void(0)" class="mobile-logo">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
-    </a>
-    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
-    <nav role="navigation">
-      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-        <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-        <li class="nav-link logo">
-          <a href="javascript:void(0)" class="logo">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
-          </a>
-        </li>
-        <li class="nav-link"><a href="javascript:void(0)">Testimonials</a></li>
-        <li class="nav-link more"><a href="javascript:void(0)">More</a>
-          <ul class="submenu">
-            <li><a href="javascript:void(0)">Submenu Item</a></li>
-            <li><a href="javascript:void(0)">Another Item</a></li>
-            <li class="more"><a href="javascript:void(0)">Item with submenu</a>
-              <ul class="submenu">
-                <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
-                <li><a href="javascript:void(0)">Another Item</a></li>
-              </ul>
-            </li>
-            <li class="more"><a href="javascript:void(0)">Another submenu</a>
-              <ul class="submenu">
-                <li><a href="javascript:void(0)">Sub-submenu</a></li>
-                <li><a href="javascript:void(0)">An Item</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-link"><a href="javascript:void(0)">Sign up</a></li>
-      </ul>
-    </nav>
+<div class="image-gradient-dynamic">
+  <div class="overlay"></div>
+  <div class="copy">
+    <h1>Hello, I'm <green>Chris O'Connell</green>.</h1>
+    <p>I <green>design</green> & <green>make</green> User Interfaces and Experiences.</p>
   </div>
-</header>
-
-<div class="hero">
-	<div class="hero-inner">
-    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
-" alt="Logo Image"></a>
-		<div class="hero-copy">
-			<h1>Short description of Product</h1>
-			<p>A few reasons why this product is worth using, who it's for and why they need it.</p>	
-		</div>
-	</div>
 </div>
 
-<div class="side-image">
-  <div class="images-wrapper"></div>
-    <div class="side-image-content">
-      <h4>Topic Name</h4>
-      <h1>Message with a gradient image</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.</p>
+<div id="js-parallax-window" class="parallax-window">
+  <div class="parallax-static-content">
+    <b>Parallax Window</b>
   </div>
+  <div id="js-parallax-background" class="parallax-background"></div>
 </div>
 
 <div class="grid-items-lines">
