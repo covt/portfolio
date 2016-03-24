@@ -11,8 +11,8 @@ $muli: 'Muli', sans-serif;
 
 
 // color variables
-$primary: #71B280;
-$secondary: #134E5E;
+$primary: #085078;
+$secondary: #85D8CE;
 
 // functions 
 
@@ -338,7 +338,7 @@ div.code {
     margin: auto;
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 40%;
     z-index: 999;
     
     h1 {
@@ -1097,6 +1097,7 @@ $parallax-background-height: $parallax-window-height * 2;
     -moz-transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
     transform:rotate(45deg);
+
 }
 .arrow-down {
     -ms-transform:rotate(135deg);

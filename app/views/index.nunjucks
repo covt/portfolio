@@ -2,16 +2,16 @@
 
 {% block content %}
 <div class="image-gradient-dynamic">
-  <div class="overlay"></div>
-  <div class="copy">
-    <h1>Hello, I'm <green>Chris O'Connell</green>.</h1>
-    <p>I <green>design</green> & <green>make</green> User Interfaces and Experiences.</p>
-  </div>
+    <div class="overlay"></div>
+        <div class="copy">
+            <h1>Hello, I'm <green>Chris O'Connell</green>.</h1>
+            <p>I <green>design</green> & <green>make</green> User Interfaces and Experiences.</p>
+        </div>
 </div>
 
 <div id="js-parallax-window" class="parallax-window">
   <div class="parallax-static-content">
-    <b>Parallax Window</b>
+
   </div>
   <div id="js-parallax-background" class="parallax-background"></div>
 </div>

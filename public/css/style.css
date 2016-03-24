@@ -291,16 +291,16 @@ div.code {
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in; }
   .image-gradient-dynamic blue:hover {
-    color: #71B280; }
+    color: #085078; }
   .image-gradient-dynamic green {
-    color: #71B280;
+    color: #085078;
     -o-transition: all .75s ease-in;
     -ms-transition: all .75s ease-in;
     -moz-transition: all .75s ease-in;
     -webkit-transition: all .75s ease-in;
     transition: all .75s ease-in; }
   .image-gradient-dynamic green:hover {
-    color: #134E5E; }
+    color: #85D8CE; }
   .image-gradient-dynamic img {
     height: auto;
     left: 0;
@@ -318,7 +318,7 @@ div.code {
     margin: auto;
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 40%;
     z-index: 999; }
     .image-gradient-dynamic .copy h1 {
       font-size: 2.5em;
