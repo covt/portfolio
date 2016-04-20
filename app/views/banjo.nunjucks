@@ -1,0 +1,32 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+<div id="js-parallax-window" class="parallax-window">
+  <div class="parallax-static-content-header">
+        <h1>
+            Ban.jo – The Live Internet
+        </h1>
+        <p>
+            Banjo instantly organizes the world’s social and digital signals by location, giving an unprecedented level of understanding of what’s happening anywhere in the world, in real time.
+        </p>
+  </div>
+  <div id="js-parallax-background" class="parallax-background"></div>
+</div>
+
+<div class="project">
+	<div class="project-inner">
+		<div class="project-copy">
+			<h1>Short description of Product</h1>
+            <div class="product-copy left">
+                <p>A few reasons why this product is worth using, who it's for and why they need it.</p>	
+            </div>
+            <div class="product-copy left">
+                <p>A few reasons why this product is worth using, who it's for and why they need it.</p>	
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+{% endblock %}

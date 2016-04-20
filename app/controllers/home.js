@@ -13,3 +13,11 @@ router.get('/', function (req, res, next) {
       articles: articles
     });
 });
+
+router.get('/banjo', function (req, res, next) {
+  var articles = [new Article(), new Article()];
+    res.render('banjo', {
+      title: "Chris O'Connell - Ban.jo",
+      articles: articles
+    });
+});

@@ -1,18 +1,18 @@
 @import "bourbon";
 @import "neat";
 
-// google fonts
-@import url(https://fonts.googleapis.com/css?family=Ovo);
-@import url(https://fonts.googleapis.com/css?family=Muli);
 
 //font variables
-$ovo: 'Ovo', serif;
-$muli: 'Muli', sans-serif;
+$serif: 'museo-slab', serif;
+$sans: 'brandon-grotesque', sans-serif;
 
 
 // color variables
 $primary: #085078;
 $secondary: #85D8CE;
+$body: #272727;
+$white: #f7f7f7;
+$black: #2B2B2B;
 
 // functions 
 
@@ -27,9 +27,11 @@ $secondary: #85D8CE;
 
 // scss
 
+
 body {
-  font-family: muli;
+  font-family: $sans;
   margin: 0px;
+  color: $body;
 }
 
 a {
@@ -38,7 +40,8 @@ a {
 
 // scss for headings
 #{headings(1,6)} {
-  font-family: ovo;
+  font-family: $sans;
+  color: $black;
 }
 
 // neat
@@ -278,27 +281,110 @@ div.code {
   }
 }
 
+.project {  
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $hero-background-top: #ffffff; 
+  $hero-background-bottom: #f7f7f7;
+  $project-color: #9A9A8A;
+  $gradient-angle: 10deg;
+
+  @include linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+
+  .project-logo img {
+    height: 4em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .project-inner {
+    @include outer-container;
+    @include clearfix;
+    $mobile: new-breakpoint(max-width 500px 4);
+    margin: auto;
+    padding: 3.5em;
+    text-align: left;
+
+    .project-copy {
+      text-align: left;
+      
+      h1 {
+        color: $project-color;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      h3 {
+        color: $project-color;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      }
+      }
+      p {
+        color: $project-color;
+        line-height: 1.4em;
+        @include media($large-screen) {
+          font-size: 1em;
+          max-width: 90%;
+        }
+      }
+    }
+    .product-copy.left {
+        @include span-columns(6);
+        @include media($mobile) {
+            @include span-columns(3);
+        }
+    }
+        .product-copy.right {
+        @include span-columns(6);
+        @include media($mobile) {
+            @include span-columns(3);
+        }
+    }
+  }
+}
+
+
 
 // DYNAMIC HEADER
 .image-gradient-dynamic {
-  $image-gradient-color-top: grey; 
-  $transparency-top: 0.9;
+  $image-gradient-color-top: white; 
+  $transparency-top: 0.6;
   $image-gradient-color-bottom: white; 
-  $transparency-bottom: 0.6;
+  $transparency-bottom: 0.1;
   $vertical-angle: 0deg;
   $image-gradient-color-left: white; 
-  $transparency-left: 0.8;
+  $transparency-left: 0.6;
   $image-gradient-color-right: white; 
   $transparency-right: 0.8;
   $horizontal-angle: 90deg;
   
   line-height: 0;
   position: relative;
-  height:100vh;
+  height:95vh;
   width: 100%;
+  p {
+      text-align: center;
+  }
+  img {
+        padding-top: 3em;
+        opacity: 0.8;
+      }
   
   blue {
-      color: #secondary;
+      color: $secondary;
         -o-transition: all 1s ease-in;
         -ms-transition: all 1s ease-in;
         -moz-transition: all 1s ease-in;
@@ -325,11 +411,10 @@ div.code {
 
   img {
    height: auto;
-   left: 0; 
+   left: 15%; 
    position: relative;
-   top: 0;
-   width: 100%;
-   height: 100vh;
+   top: 5%;
+   width: 75%;
   }
 
   .copy {
@@ -342,16 +427,31 @@ div.code {
     z-index: 999;
     
     h1 {
+        font-family: $sans;
+        font-weight: 900;
+        text-transform: uppercase;
         font-size: 2.5em;
         line-height: 1em;
         position: relative;
     }
 
     p {
-      font-size: 1.5em;
+      font-family: $serif;
+      font-weight: 300;
+      font-size: 1em;
       line-height: 1.5em;
-      padding: 1em 2em;
+      padding: 0em 2em;
       position: relative;
+      font-style: italic;
+    }
+    
+    @media(max-width:767px) {
+        h1 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1em;
+        }
     }
   }
 
@@ -379,18 +479,65 @@ $parallax-background-height: $parallax-window-height * 2;
   max-height: $parallax-window-height;
   overflow: hidden;
   position: relative;
-  text-align: center;
+  text-align: left;
+  padding-left: 2em;
   width: 100%;
 }
 
 .parallax-static-content {
+  @include span-columns(7);
+  color: #9A9A8A;
+  padding: 5em 0;
+  position: relative;
+  z-index: 9;
+  
+  p {
+      color: $white;
+  }
+}
+
+.parallax-static-content-header {
+  @include span-columns(8);
+  @include shift(2);
   color: #9A9A8A;
   padding: 8em 0;
   position: relative;
   z-index: 9;
+  
+  h1 {
+      color: $white;
+  }
+  
+  p {
+      color: $white;
+  }
 }
 
 .parallax-background {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: $primary;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
+.parallax-background-banjo {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: beige;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
+.parallax-background-banjo-also {
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
   background-position: top;
   background-size: cover;
@@ -784,9 +931,9 @@ $parallax-background-height: $parallax-window-height * 2;
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $base-font-color: $dark-gray !default;
-  $side-image-background-top: #B5EBEB;
-  $side-image-background-bottom: #5DAC5D;
-  $side-image-content-background: #F9F9F9;
+  $side-image-background-top: white;
+  $side-image-background-bottom: white;
+  $side-image-content-background: white;
   $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
 
   background: $side-image-content-background;
@@ -796,8 +943,7 @@ $parallax-background-height: $parallax-window-height * 2;
   }
 
   .images-wrapper {
-    @include background(url('https:
-//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    @include background(url(''), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     background-size: cover;
     border-bottom: $side-image-border;
@@ -809,13 +955,13 @@ $parallax-background-height: $parallax-window-height * 2;
       @include span-columns(4);
       background-position: bottom;
       background-size: cover;
-      border-right: $side-image-border;
     }
   }
 
   .side-image-content {
     @include span-columns(12);
     padding: 1em 1em 4em 1em;
+    border-bottom: $side-image-border;
 
     @include media($large-screen) {
       @include span-columns(8);
@@ -1029,7 +1175,7 @@ $parallax-background-height: $parallax-window-height * 2;
     text-align: center;
 
     img {
-      height: 3em;
+      height: 2em;
     }
   } 
 
@@ -1086,13 +1232,26 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 // ICONS
+.arrow-container {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid $primary;
+    padding: 8px 10px 12px 10px;
+    @include transform(translate(-50%, -50%));
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 85%;
+    z-index: 999;
+}
 .arrow {
     display:inline-block;
     width:18px;
     height:18px;
     line-height:21px;
-    border-top:5px solid #aaa;
-    border-right:5px solid #aaa;
+    border-top:5px solid $primary;
+    border-right:5px solid $primary;
     -ms-transform:rotate(45deg);
     -moz-transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
@@ -1117,3 +1276,8 @@ $parallax-background-height: $parallax-window-height * 2;
     -webkit-transform:rotate(-45deg);
     transform:rotate(-45deg);
 }
+
+scroll {
+    display: block;
+}
+
