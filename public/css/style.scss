@@ -10,7 +10,7 @@ $sans: 'brandon-grotesque', sans-serif;
 // color variables
 $primary: #085078;
 $secondary: #85D8CE;
-$body: #272727;
+$body: #474747;
 $white: #f7f7f7;
 $black: #2B2B2B;
 
@@ -287,7 +287,7 @@ div.code {
   $large-screen: em(860) !default;
   $hero-background-top: #ffffff; 
   $hero-background-bottom: #f7f7f7;
-  $project-color: #9A9A8A;
+  $project-color: $body;
   $gradient-angle: 10deg;
 
   @include linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top);
@@ -308,7 +308,7 @@ div.code {
     @include clearfix;
     $mobile: new-breakpoint(max-width 500px 4);
     margin: auto;
-    padding: 3.5em;
+    padding: 2em;
     text-align: left;
 
     .project-copy {
@@ -526,22 +526,10 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-background-banjo {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
-  background-position: top;
+  background: url("../img/banjo-project-bg.png") repeat;
   background-size: cover;
-  background-color: beige;
-  height: $parallax-background-height;
-  left: 0;
-  position: absolute;
-  top: - $parallax-window-height / 3;
-  width: 100%;
-}
-
-.parallax-background-banjo-also {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
   background-position: top;
-  background-size: cover;
-  background-color: beige;
+  background-color: $primary;
   height: $parallax-background-height;
   left: 0;
   position: absolute;

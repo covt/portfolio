@@ -8,7 +8,7 @@ html {
 body {
   font-family: "brandon-grotesque", sans-serif;
   margin: 0px;
-  color: #272727; }
+  color: #474747; }
 
 a {
   color: #00B7FF; }
@@ -296,7 +296,7 @@ div.code {
     margin-left: auto;
     margin-right: auto;
     margin: auto;
-    padding: 3.5em;
+    padding: 2em;
     text-align: left; }
     .project .project-inner::after {
       clear: both;
@@ -309,21 +309,21 @@ div.code {
     .project .project-inner .project-copy {
       text-align: left; }
       .project .project-inner .project-copy h1 {
-        color: #9A9A8A;
+        color: #474747;
         font-size: 1.6em;
         margin-bottom: 0.5em; }
         @media screen and (min-width: 53.75em) {
           .project .project-inner .project-copy h1 {
             font-size: 1.8em; } }
         .project .project-inner .project-copy h1 h3 {
-          color: #9A9A8A;
+          color: #474747;
           font-size: 1.6em;
           margin-bottom: 0.5em; }
           @media screen and (min-width: 53.75em) {
             .project .project-inner .project-copy h1 h3 {
               font-size: 1.8em; } }
       .project .project-inner .project-copy p {
-        color: #9A9A8A;
+        color: #474747;
         line-height: 1.4em; }
         @media screen and (min-width: 53.75em) {
           .project .project-inner .project-copy p {
@@ -499,21 +499,10 @@ div.code {
   width: 100%; }
 
 .parallax-background-banjo {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
-  background-position: top;
+  background: url("../img/banjo-project-bg.png") repeat;
   background-size: cover;
-  background-color: beige;
-  height: 60em;
-  left: 0;
-  position: absolute;
-  top: -10em;
-  width: 100%; }
-
-.parallax-background-banjo-also {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
   background-position: top;
-  background-size: cover;
-  background-color: beige;
+  background-color: #085078;
   height: 60em;
   left: 0;
   position: absolute;
