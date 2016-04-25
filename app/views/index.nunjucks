@@ -16,14 +16,16 @@
 </div>
 
 <div id="js-parallax-window" class="parallax-window">
-  <div class="parallax-static-content">
-        <p>
-            Sed gravida quis diam sed pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra gravida lacus in semper. Sed ut sodales lorem. Aliquam tincidunt ac risus vitae tempus. Ut euismod arcu ante, in sodales tellus elementum non. Vivamus vulputate dolor ullamcorper magna bibendum, vel vulputate metus sollicitudin. Nullam sed lobortis nisi, vel tincidunt felis.
-        </p>
-        <p>
-            Sed gravida quis diam sed pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra gravida lacus in semper. Sed ut sodales lorem. Aliquam tincidunt ac risus vitae tempus. Ut euismod arcu ante, in sodales tellus elementum non. Vivamus vulputate dolor ullamcorper magna bibendum, vel vulputate metus sollicitudin. Nullam sed lobortis nisi, vel tincidunt felis.
-        </p>
-  </div>
+    <div class="parallax-copy">
+    <div class="parallax-static-content">
+            <p>
+                Sed gravida quis diam sed pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra gravida lacus in semper. Sed ut sodales lorem. Aliquam tincidunt ac risus vitae tempus. Ut euismod arcu ante, in sodales tellus elementum non. Vivamus vulputate dolor ullamcorper magna bibendum, vel vulputate metus sollicitudin. Nullam sed lobortis nisi, vel tincidunt felis.
+            </p>
+            <p>
+                Sed gravida quis diam sed pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra gravida lacus in semper. Sed ut sodales lorem. Aliquam tincidunt ac risus vitae tempus. Ut euismod arcu ante, in sodales tellus elementum non. Vivamus vulputate dolor ullamcorper magna bibendum, vel vulputate metus sollicitudin. Nullam sed lobortis nisi, vel tincidunt felis.
+            </p>
+    </div>
+</div>
   <div id="js-parallax-background" class="parallax-background"></div>
 </div>
 

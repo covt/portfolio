@@ -484,6 +484,10 @@ $parallax-background-height: $parallax-window-height * 2;
   width: 100%;
 }
 
+.parallax-copy {
+  @include outer-container;
+}
+
 .parallax-static-content {
   @include span-columns(7);
   color: #9A9A8A;
@@ -498,7 +502,6 @@ $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-static-content-header {
   @include span-columns(8);
-  @include shift(2);
   color: #9A9A8A;
   padding: 8em 0;
   position: relative;
@@ -819,9 +822,10 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .grid-items-lines {
+  @include outer-container;
   $base-background-color: white !default;
-  $dark-gray: #333 !default;
-  $light-gray: #DDD !default;
+  $dark-gray: $body !default;
+  $light-gray: $white !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
   $base-font-color: $dark-gray !default;

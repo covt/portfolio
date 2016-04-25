@@ -23,10 +23,10 @@
     <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
     <nav role="navigation">
       <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-        <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
+        <li class="nav-link"><a href="/">Home</a></li>
         <li class="nav-link more"><a href="javascript:void(0)">Projects</a>
           <ul class="submenu">
-            <li><a href="javascript:void(0)">Banjo</a></li>
+            <li><a href="/banjo">Banjo</a></li>
             <li><a href="javascript:void(0)">WithMe</a></li>
             <li><a href="javascript:void(0)">Downtown Project</a></li>
             <li><a href="javascript:void(0)">Gaming</a></li>
