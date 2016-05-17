@@ -6,6 +6,7 @@
   <title>{{ title }}</title>
   <link rel="icon" type="image/png" href="/img/favicon.png">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/devices.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="/js/script.js"></script>
   <script src="https://use.typekit.net/jik5emo.js"></script>
@@ -27,7 +28,7 @@
         <li class="nav-link more"><a href="javascript:void(0)">Projects</a>
           <ul class="submenu">
             <li><a href="/banjo">Banjo</a></li>
-            <li><a href="javascript:void(0)">WithMe</a></li>
+            <li><a href="/withme">WithMe</a></li>
             <li><a href="javascript:void(0)">Downtown Project</a></li>
             <li><a href="javascript:void(0)">Gaming</a></li>
             </li>
@@ -47,7 +48,7 @@
   </div>
 </header>
   {% block content %}{% endblock %}
-  
+
 <div class="grid-items-lines">
   <a href="/banjo" class="grid-item grid-item-big">
     <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
@@ -56,8 +57,8 @@
   </a>
   <a href="javascript:void(0)" class="grid-item">
     <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
-    <h1>Gaming</h1>
-    <p>Web Design – Fully Responsive</p>
+    <h1>Las Vegas Reactor</h1>
+    <p>Creative Director / Developer – Weekly Web Editorial</p>
   </a>
   <a href="javascript:void(0)" class="grid-item">
     <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">

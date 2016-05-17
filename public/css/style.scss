@@ -3,8 +3,9 @@
 
 
 //font variables
-$serif: 'museo-slab', serif;
-$sans: 'brandon-grotesque', sans-serif;
+$serif: 'grad', serif;
+$sans: 'freight-sans-pro', sans-serif;
+$brand: 'grad', serif;
 
 
 // color variables
@@ -14,7 +15,7 @@ $body: #474747;
 $white: #f7f7f7;
 $black: #2B2B2B;
 
-// functions 
+// functions
 
 // h1-6 headings
 @function headings($from:1, $to:6) {
@@ -224,11 +225,11 @@ div.code {
 
 // HERO
 
-.hero {  
+.hero {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE; 
+  $hero-background-top: #7F99BE;
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
@@ -256,7 +257,7 @@ div.code {
 
     .hero-copy {
       text-align: center;
-      
+
       h1 {
         color: $hero-color;
         font-size: 1.6em;
@@ -270,7 +271,7 @@ div.code {
       p {
         color: $hero-color;
         line-height: 1.4em;
-        margin: 0 auto 3em auto; 
+        margin: 0 auto 3em auto;
 
         @include media($large-screen) {
           font-size: 1.1em;
@@ -281,11 +282,11 @@ div.code {
   }
 }
 
-.project {  
+.project {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
-  $hero-background-top: #ffffff; 
+  $hero-background-top: #ffffff;
   $hero-background-bottom: #f7f7f7;
   $project-color: $body;
   $gradient-angle: 10deg;
@@ -313,7 +314,7 @@ div.code {
 
     .project-copy {
       text-align: left;
-      
+
       h1 {
         color: $project-color;
         font-size: 1.6em;
@@ -360,17 +361,17 @@ div.code {
 
 // DYNAMIC HEADER
 .image-gradient-dynamic {
-  $image-gradient-color-top: white; 
+  $image-gradient-color-top: white;
   $transparency-top: 0.6;
-  $image-gradient-color-bottom: white; 
+  $image-gradient-color-bottom: white;
   $transparency-bottom: 0.1;
   $vertical-angle: 0deg;
-  $image-gradient-color-left: white; 
+  $image-gradient-color-left: white;
   $transparency-left: 0.6;
-  $image-gradient-color-right: white; 
+  $image-gradient-color-right: white;
   $transparency-right: 0.8;
   $horizontal-angle: 90deg;
-  
+
   line-height: 0;
   position: relative;
   height:95vh;
@@ -382,7 +383,7 @@ div.code {
         padding-top: 3em;
         opacity: 0.8;
       }
-  
+
   blue {
       color: $secondary;
         -o-transition: all 1s ease-in;
@@ -391,11 +392,11 @@ div.code {
         -webkit-transition: all 1s ease-in;
         transition: all 1s ease-in;
   }
-  
+
   blue:hover {
       color: $primary;
   }
-  
+
   green {
       color: $primary;
         -o-transition: all .75s ease-in;
@@ -404,35 +405,35 @@ div.code {
         -webkit-transition: all .75s ease-in;
         transition: all .75s ease-in;
   }
-  
+
   green:hover {
       color: $secondary;
   }
 
   img {
    height: auto;
-   left: 15%; 
+   left: 15%;
    position: relative;
    top: 5%;
    width: 75%;
   }
 
   .copy {
-    @include transform(translate(-50%, -50%));
-    left: 50%;
+    width: 100%;
     margin: auto;
     position: absolute;
+    top: 20%;
     text-align: center;
-    top: 40%;
-    z-index: 999;
-    
+
     h1 {
         font-family: $sans;
         font-weight: 900;
         text-transform: uppercase;
-        font-size: 2.5em;
+        font-size: 5em;
         line-height: 1em;
         position: relative;
+        font-family: $brand;
+        letter-spacing: -2px;
     }
 
     p {
@@ -440,14 +441,14 @@ div.code {
       font-weight: 300;
       font-size: 1em;
       line-height: 1.5em;
-      padding: 0em 2em;
       position: relative;
       font-style: italic;
     }
-    
+
     @media(max-width:767px) {
         h1 {
-            font-size: 1.5em;
+            font-size: 3.5em;
+            letter-spacing: -1px;
         }
         p {
             font-size: 1em;
@@ -456,13 +457,13 @@ div.code {
   }
 
   .overlay {
-    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top), 
+    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top),
       transparentize($image-gradient-color-bottom, $transparency-bottom));
     display: block;
     @include position(absolute, 0px 0px 0px 0px);
 
     &:after {
-      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left), 
+      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left),
         transparentize($image-gradient-color-right, $transparency-right));
       @include position(absolute, 0px 0px 0px 0px);
       content: '';
@@ -472,7 +473,7 @@ div.code {
 }
 
 // PARALLAX
-$parallax-window-height: 30em;
+$parallax-window-height: 50em;
 $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-window {
@@ -494,7 +495,7 @@ $parallax-background-height: $parallax-window-height * 2;
   padding: 5em 0;
   position: relative;
   z-index: 9;
-  
+
   p {
       color: $white;
   }
@@ -506,11 +507,11 @@ $parallax-background-height: $parallax-window-height * 2;
   padding: 8em 0;
   position: relative;
   z-index: 9;
-  
+
   h1 {
       color: $white;
   }
-  
+
   p {
       color: $white;
   }
@@ -540,11 +541,23 @@ $parallax-background-height: $parallax-window-height * 2;
   width: 100%;
 }
 
+.parallax-background-owm {
+  background: url("../img/owm-project-bg.png") repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: $primary;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
 // Based on http://codepen.io/skeurentjes/
 
 
  // NAVBAR
- 
+
 .centered-navigation {
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
@@ -568,7 +581,7 @@ $parallax-background-height: $parallax-window-height * 2;
   width: 100%;
   z-index: 9999;
 
-  
+
 // Mobile view
 
   .mobile-logo {
@@ -608,7 +621,7 @@ $parallax-background-height: $parallax-window-height * 2;
     }
   }
 
-  
+
 // Nav menu
 
   .centered-navigation-wrapper {
@@ -619,7 +632,7 @@ $parallax-background-height: $parallax-window-height * 2;
   }
 
   ul.centered-navigation-menu {
-    -webkit-transform-style: preserve-3d; 
+    -webkit-transform-style: preserve-3d;
 // stop webkit flicker
     clear: both;
     display: none;
@@ -639,7 +652,7 @@ $parallax-background-height: $parallax-window-height * 2;
     }
   }
 
-  
+
 // The nav items
 
   .nav-link:first-child {
@@ -696,7 +709,7 @@ $parallax-background-height: $parallax-window-height * 2;
     opacity: 0.6;
   }
 
-  
+
 // Sub menus
 
   li.more.nav-link {
@@ -831,7 +844,7 @@ $parallax-background-height: $parallax-window-height * 2;
   $base-font-color: $dark-gray !default;
   $grid-items-background: $base-background-color;
   $grid-item-background: $base-background-color;
-  $grid-item-border: 1px solid transparentize($base-font-color, 0.8); 
+  $grid-item-border: 1px solid transparentize($base-font-color, 0.8);
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
   $grid-item-color: $base-font-color;
@@ -839,7 +852,7 @@ $parallax-background-height: $parallax-window-height * 2;
 
   @include clearfix;
   position: relative;
-    
+
   .grid-item {
     @include transition (all 0.2s ease-in-out);
     background: $grid-item-background;
@@ -880,7 +893,7 @@ $parallax-background-height: $parallax-window-height * 2;
   .grid-item p {
       color: transparentize($grid-item-color, 0.4);
       line-height: 1.5em;
-      
+
       @include media($medium-screen) {
         max-width: 70%;
       }
@@ -893,7 +906,7 @@ $parallax-background-height: $parallax-window-height * 2;
     p {
       @include media($medium-screen) {
         max-width: 60%;
-      }  
+      }
     }
   }
 
@@ -917,12 +930,11 @@ $parallax-background-height: $parallax-window-height * 2;
 
 // SIDE IMAGE
 
-.side-image {  
+.side-image {
+  @include outer-container;
   $base-line-height: 1.5em !default;
   $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
   $large-screen: em(860) !default;
-  $base-font-color: $dark-gray !default;
   $side-image-background-top: white;
   $side-image-background-bottom: white;
   $side-image-content-background: white;
@@ -935,7 +947,7 @@ $parallax-background-height: $parallax-window-height * 2;
   }
 
   .images-wrapper {
-    @include background(url(''), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    @include background(url('http://placehold.it/800x800'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     background-size: cover;
     border-bottom: $side-image-border;
@@ -964,18 +976,8 @@ $parallax-background-height: $parallax-window-height * 2;
       margin-bottom: 0.9em;
     }
 
-    h4 {
-      background: #BBB;
-      color: white;
-      display: inline-block;
-      font-size: 0.75em;
-      margin-bottom: 1.3em;
-      padding: 3px 8px;
-      text-transform: uppercase;
-    }
-
     p {
-      color: $base-font-color;
+      color: $body;
       line-height: $base-line-height;
       margin-bottom: 3em;
     }
@@ -985,7 +987,7 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 
-// DEVICE 
+// DEVICE
 
 .device-background {
   $base-border-radius: 3px !default;
@@ -998,7 +1000,7 @@ $parallax-background-height: $parallax-window-height * 2;
   $device-background: darken(gray, 40%);
   $device-backside-background: darken($device-background, 10%);
   $device-text-color: white;
-  $device-background-top: #162C4C; 
+  $device-background-top: #162C4C;
   $device-background-bottom: #0A120D;
   $gradient-angle: 10deg;
   $device-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
@@ -1040,17 +1042,17 @@ $parallax-background-height: $parallax-window-height * 2;
 
     @include media($large-screen) {
       @include transform(
-        perspective(800px) 
-        translateX(0px) 
-        translateY(-100px) 
-        translateZ(50px) 
-        rotateX(0deg) 
-        rotateY(-20deg) 
+        perspective(800px)
+        translateX(0px)
+        translateY(-100px)
+        translateZ(50px)
+        rotateX(0deg)
+        rotateY(-20deg)
         rotateZ(-0deg));
       background: $device-background;
       border-radius: 2em;
-      box-shadow: 
-        1px 0px lighten($device-backside-background, 20%), 
+      box-shadow:
+        1px 0px lighten($device-backside-background, 20%),
         4px 0px lighten($device-backside-background, 2%),
         7px 0px $device-backside-background,
         10px 0px $device-backside-background,
@@ -1169,7 +1171,7 @@ $parallax-background-height: $parallax-window-height * 2;
     img {
       height: 2em;
     }
-  } 
+  }
 
   .footer-links {
     @include display(flex);
@@ -1205,7 +1207,7 @@ $parallax-background-height: $parallax-window-height * 2;
     color: $footer-color;
     font-size: 1em;
     margin-bottom: 0.4em;
-  }  
+  }
 
   hr {
     border: 1px solid transparentize($footer-disclaimer-color, 0.3);
@@ -1272,4 +1274,3 @@ $parallax-background-height: $parallax-window-height * 2;
 scroll {
     display: block;
 }
-

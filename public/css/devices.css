@@ -1,0 +1,70 @@
+.pca-hold {
+  width: 250px;
+}
+.pca-hold .pca-main {
+  display: block;
+  position: relative;
+  background-color: #c8c8c8;
+  border: 7.5px solid #fff;
+  border-top: 57.5px solid #fff;
+  border-bottom: 59px solid #fff;
+  border-radius: 28.25px;
+  height: 513px;
+  box-shadow: 0 0 0 2.5px #C6C7CA;
+}
+.pca-hold .pca-main:after {
+  content: '';
+  position: absolute;
+  top: -32.5px;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  width: 7.5px;
+  height: 7.5px;
+  background-color: #959595;
+  border-radius: 100%;
+  -webkit-transform: translate(-45px,0);
+  -ms-transform: translate(-45px,0);
+  -o-transform: translate(-45px,0);
+  transform: translate(-45px,0);
+}
+.pca-hold .pca-main:before {
+  content: "";
+  position: absolute;
+  top: -12.5px;
+  left: 50%;
+  opacity: 1;
+  width: 50px;
+  height: 2.5px;
+  -webkit-transform: translate(-22.5px,-18.75px);
+  -ms-transform: translate(-22.5px,-18.75px);
+  -o-transform: translate(-22.5px,-18.75px);
+  transform: translate(-22.5px,-18.75px);
+  border-radius: 2.5px;
+  background-color: #959595;
+}
+.pca-hold .pca-inner {
+  display: block;
+}
+.pca-hold .pca-sub {
+  display: block;
+  text-align: center;
+  position: relative;
+  height: 0;
+}
+.pca-hold .pca-sub .pca-bot {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  z-index: 2;
+  box-shadow: 0 0 0 2.75px #B4B6BC;
+  -webkit-transform: translate(0,-47px);
+  -ms-transform: translate(0,-47px);
+  -o-transform: translate(0,-47px);
+  transform: translate(0,-47px);
+}

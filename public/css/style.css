@@ -6,7 +6,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "freight-sans-pro", sans-serif;
   margin: 0px;
   color: #474747; }
 
@@ -14,7 +14,7 @@ a {
   color: #00B7FF; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "freight-sans-pro", sans-serif;
   color: #2B2B2B; }
 
 header h1 {
@@ -395,35 +395,31 @@ div.code {
     top: 5%;
     width: 75%; }
   .image-gradient-dynamic .copy {
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    left: 50%;
+    width: 100%;
     margin: auto;
     position: absolute;
-    text-align: center;
-    top: 40%;
-    z-index: 999; }
+    top: 20%;
+    text-align: center; }
     .image-gradient-dynamic .copy h1 {
-      font-family: "brandon-grotesque", sans-serif;
+      font-family: "freight-sans-pro", sans-serif;
       font-weight: 900;
       text-transform: uppercase;
-      font-size: 2.5em;
+      font-size: 5em;
       line-height: 1em;
-      position: relative; }
+      position: relative;
+      font-family: "grad", serif;
+      letter-spacing: -2px; }
     .image-gradient-dynamic .copy p {
-      font-family: "museo-slab", serif;
+      font-family: "grad", serif;
       font-weight: 300;
       font-size: 1em;
       line-height: 1.5em;
-      padding: 0em 2em;
       position: relative;
       font-style: italic; }
     @media (max-width: 767px) {
       .image-gradient-dynamic .copy h1 {
-        font-size: 1.5em; }
+        font-size: 3.5em;
+        letter-spacing: -1px; }
       .image-gradient-dynamic .copy p {
         font-size: 1em; } }
   .image-gradient-dynamic .overlay {
@@ -449,7 +445,7 @@ div.code {
       display: block; }
 
 .parallax-window {
-  max-height: 30em;
+  max-height: 50em;
   overflow: hidden;
   position: relative;
   text-align: left;
@@ -500,10 +496,10 @@ div.code {
   background-position: top;
   background-size: cover;
   background-color: #085078;
-  height: 60em;
+  height: 100em;
   left: 0;
   position: absolute;
-  top: -10em;
+  top: -16.66667em;
   width: 100%; }
 
 .parallax-background-banjo {
@@ -511,10 +507,21 @@ div.code {
   background-size: cover;
   background-position: top;
   background-color: #085078;
-  height: 60em;
+  height: 100em;
   left: 0;
   position: absolute;
-  top: -10em;
+  top: -16.66667em;
+  width: 100%; }
+
+.parallax-background-owm {
+  background: url("../img/owm-project-bg.png") repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: #085078;
+  height: 100em;
+  left: 0;
+  position: absolute;
+  top: -16.66667em;
   width: 100%; }
 
 .centered-navigation {
@@ -762,15 +769,22 @@ div.code {
     width: 4px; }
 
 .side-image {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   background: white; }
+  .side-image::after {
+    clear: both;
+    content: "";
+    display: table; }
   @media screen and (min-width: 53.75em) {
     .side-image {
       display: table;
       width: 100%;
       table-layout: fixed; } }
   .side-image .images-wrapper {
-    background: url(""), -webkit-linear-gradient(white, white), no-repeat;
-    background: url(""), linear-gradient(white, white), no-repeat;
+    background: url("http://placehold.it/800x800"), -webkit-linear-gradient(white, white), no-repeat;
+    background: url("http://placehold.it/800x800"), linear-gradient(white, white), no-repeat;
     background-color: white;
     background-size: cover;
     border-bottom: 1px solid rgba(179, 179, 179, 0.2);
@@ -795,16 +809,8 @@ div.code {
         padding: 4em 4em 8em 4em; } }
     .side-image .side-image-content h1 {
       margin-bottom: 0.9em; }
-    .side-image .side-image-content h4 {
-      background: #BBB;
-      color: white;
-      display: inline-block;
-      font-size: 0.75em;
-      margin-bottom: 1.3em;
-      padding: 3px 8px;
-      text-transform: uppercase; }
     .side-image .side-image-content p {
-      color: #333;
+      color: #474747;
       line-height: 1.5em;
       margin-bottom: 3em; }
 
