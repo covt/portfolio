@@ -296,7 +296,7 @@ div.code {
     margin-left: auto;
     margin-right: auto;
     margin: auto;
-    padding: 2em;
+    padding: 2em 4px 2em 4px;
     text-align: left; }
     .project .project-inner::after {
       clear: both;
@@ -310,11 +310,7 @@ div.code {
       text-align: left; }
       .project .project-inner .project-copy h1 {
         color: #474747;
-        font-size: 1.6em;
         margin-bottom: 0.5em; }
-        @media screen and (min-width: 53.75em) {
-          .project .project-inner .project-copy h1 {
-            font-size: 1.8em; } }
         .project .project-inner .project-copy h1 h3 {
           color: #474747;
           font-size: 1.6em;
@@ -324,7 +320,7 @@ div.code {
               font-size: 1.8em; } }
       .project .project-inner .project-copy p {
         color: #474747;
-        line-height: 1.4em; }
+        line-height: 1.5em; }
         @media screen and (min-width: 53.75em) {
           .project .project-inner .project-copy p {
             font-size: 1em;
@@ -449,7 +445,7 @@ div.code {
   overflow: hidden;
   position: relative;
   text-align: left;
-  padding-left: 2em;
+  padding-left: 8px;
   width: 100%; }
 
 .parallax-copy {
@@ -481,7 +477,7 @@ div.code {
   margin-right: 2.35765%;
   width: 65.88078%;
   color: #9A9A8A;
-  padding: 8em 0;
+  padding: 8em 0 8em 0;
   position: relative;
   z-index: 9; }
   .parallax-static-content-header:last-child {
@@ -701,73 +697,6 @@ div.code {
             text-align: left;
             width: 12em; } }
 
-.grid-items-lines {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative; }
-  .grid-items-lines::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .grid-items-lines::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .grid-items-lines .grid-item {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    background: white;
-    border-bottom: 1px solid rgba(71, 71, 71, 0.2);
-    border-right: 1px solid rgba(71, 71, 71, 0.2);
-    cursor: pointer;
-    float: left;
-    height: 14em;
-    overflow: hidden;
-    outline: none;
-    padding: 2em;
-    text-decoration: none;
-    width: 100%; }
-    @media screen and (min-width: 53.75em) {
-      .grid-items-lines .grid-item {
-        width: 33.33333%; } }
-    .grid-items-lines .grid-item:focus, .grid-items-lines .grid-item:hover {
-      background: rgba(71, 71, 71, 0.05); }
-  .grid-items-lines .grid-item img {
-    display: block;
-    height: 2.5em;
-    margin-bottom: 1.2em;
-    opacity: 0.2; }
-  .grid-items-lines .grid-item h1 {
-    color: #474747;
-    font-size: 1.3em;
-    margin-bottom: 0.4em; }
-  .grid-items-lines .grid-item p {
-    color: rgba(71, 71, 71, 0.6);
-    line-height: 1.5em; }
-    @media screen and (min-width: 40em) {
-      .grid-items-lines .grid-item p {
-        max-width: 70%; } }
-  @media screen and (min-width: 53.75em) {
-    .grid-items-lines .grid-item-big {
-      width: 66.66667%; } }
-  @media screen and (min-width: 40em) {
-    .grid-items-lines .grid-item-big p {
-      max-width: 60%; } }
-  .grid-items-lines .bottom-cover {
-    background: white;
-    bottom: 0px;
-    height: 3px;
-    position: absolute;
-    width: 100%; }
-  .grid-items-lines .right-cover {
-    background: white;
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    width: 4px; }
-
 .grid-items {
   max-width: 68em;
   margin-left: auto;
@@ -782,7 +711,7 @@ div.code {
     content: "";
     display: table; }
   .grid-items .grid-item {
-    background: #6b83a6;
+    background: #67a6a7;
     border-bottom: 9px solid white;
     border-left: 4.5px solid white;
     border-right: 4.5px solid white;
@@ -801,34 +730,34 @@ div.code {
       .grid-items .grid-item {
         width: 33.33333%; } }
     .grid-items .grid-item:nth-child(1) {
-      background-color: #6b83a6;
-      box-shadow: inset 0 0 1px 2px #536a8b; }
+      background-color: #67a6a7;
+      box-shadow: inset 0 0 1px 2px #508a8b; }
       .grid-items .grid-item:nth-child(1):focus, .grid-items .grid-item:nth-child(1):hover {
-        background-color: #536a8b;
+        background-color: #508a8b;
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover; }
     .grid-items .grid-item:nth-child(2) {
-      background-color: #3581A5;
-      box-shadow: inset 0 0 1px 2px #29637e; }
+      background-color: #484848;
+      box-shadow: inset 0 0 1px 2px #2f2f2f; }
       .grid-items .grid-item:nth-child(2):focus, .grid-items .grid-item:nth-child(2):hover {
-        background-color: #29637e;
+        background-color: #2f2f2f;
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover; }
     .grid-items .grid-item:nth-child(3) {
-      background-color: #5FBEBE;
-      box-shadow: inset 0 0 1px 2px #44a6a6; }
+      background-color: #f6c135;
+      box-shadow: inset 0 0 1px 2px #edaf0b; }
       .grid-items .grid-item:nth-child(3):focus, .grid-items .grid-item:nth-child(3):hover {
-        background-color: #44a6a6;
+        background-color: #edaf0b;
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover; }
     .grid-items .grid-item:nth-child(4) {
-      background-color: #98C79A;
-      box-shadow: inset 0 0 1px 2px #77b57a; }
+      background-color: #f26fa3;
+      box-shadow: inset 0 0 1px 2px #ee4085; }
       .grid-items .grid-item:nth-child(4):focus, .grid-items .grid-item:nth-child(4):hover {
-        background-color: #77b57a;
+        background-color: #ee4085;
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover; }
@@ -879,7 +808,7 @@ div.code {
       max-width: 60%; } }
   .grid-items .grid-item-image {
     background: url("https:\a //raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
-    background-color: #6b83a6;
+    background-color: #67a6a7;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -888,7 +817,8 @@ div.code {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background: white; }
+  background: white;
+  padding-left: 4px; }
   .side-image::after {
     clear: both;
     content: "";
@@ -937,7 +867,7 @@ div.code {
       .side-image .side-image-content {
         display: table-cell;
         width: 66.66667%;
-        padding: 4em 4em 8em 4em; } }
+        padding: 4em 4em 4em 4em; } }
     .side-image .side-image-content h1 {
       margin-bottom: 0.9em; }
     .side-image .side-image-content p {

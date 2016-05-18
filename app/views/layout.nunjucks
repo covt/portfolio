@@ -28,9 +28,9 @@
         <li class="nav-link more"><a href="javascript:void(0)">Projects</a>
           <ul class="submenu">
             <li><a href="/banjo">Banjo</a></li>
+            <li><a href="/reactor">Reactor Publishing</a></li>
             <li><a href="/withme">WithMe</a></li>
             <li><a href="javascript:void(0)">Downtown Project</a></li>
-            <li><a href="javascript:void(0)">Gaming</a></li>
             </li>
           </ul>
         </li>
@@ -50,7 +50,7 @@
   {% block content %}{% endblock %}
 
   <div class="grid-items">
-    <a href="/banjo" class="grid-item grid-item-big grid-item-image">
+    <a href="/banjo" class="grid-item grid-item-big">
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/49db8c0f2f8066c2c3a275781503fe3303a1a9fc/source/images/placeholder.png" alt="">
       <h1>Banjo</h1>
       <p>UI/UX Design – Mobile App Re-Imagining</p>
