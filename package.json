@@ -14,7 +14,8 @@
     "compression": "^1.5.2",
     "method-override": "^2.3.0",
     "glob": "^6.0.4",
-    "nunjucks": "^2.0.0"
+    "nunjucks": "^2.0.0",
+    "gulp": "^3.9.0",
   },
   "devDependencies": {
     "gulp": "^3.9.0",
