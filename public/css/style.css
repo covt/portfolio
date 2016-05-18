@@ -858,6 +858,21 @@ div.code {
         width: 33.33333%;
         background-position: bottom;
         background-size: cover; } }
+  .side-image .images-wrapper-owm {
+    background: url("/img/owm-side.png"), -webkit-linear-gradient(white, white), no-repeat;
+    background: url("/img/owm-side.png"), linear-gradient(white, white), no-repeat;
+    background-color: white;
+    background-size: cover;
+    border-bottom: 1px solid rgba(179, 179, 179, 0.2);
+    display: block;
+    min-height: 12em;
+    padding: 3em; }
+    @media screen and (min-width: 53.75em) {
+      .side-image .images-wrapper-owm {
+        display: table-cell;
+        width: 33.33333%;
+        background-position: bottom;
+        background-size: cover; } }
   .side-image .side-image-content {
     display: table-cell;
     width: 100%;
@@ -987,7 +1002,7 @@ div.code {
     max-width: 100%; }
 
 .footer {
-  background: #40526b;
+  background: #343434;
   padding: 3em 1.618em;
   width: 100%; }
   .footer .footer-logo {

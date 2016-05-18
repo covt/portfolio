@@ -6,7 +6,7 @@
   <title>{{ title }}</title>
   <link rel="icon" type="image/png" href="/img/favicon.png">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/devices.css" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="/js/script.js"></script>
   <script src="https://use.typekit.net/jik5emo.js"></script>
@@ -76,31 +76,14 @@
 
   <footer class="footer" role="contentinfo">
   <div class="footer-logo">
-    <img src="/img/nav-inverse.png" alt="Logo image">
-  </div>
-  <div class="footer-links">
-    <ul>
-      <li><h3>Content</h3></li>
-      <li><a href="javascript:void(0)">About</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
-      <li><a href="javascript:void(0)">Products</a></li>
-    </ul>
-    <ul>
-      <li><h3>Follow Us</h3></li>
-      <li><a href="javascript:void(0)">Facebook</a></li>
-      <li><a href="javascript:void(0)">Twitter</a></li>
-      <li><a href="javascript:void(0)">YouTube</a></li>
-    </ul>
-    <ul>
-      <li><h3>Legal</h3></li>
-      <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-      <li><a href="javascript:void(0)">Privacy Policy</a></li>
-    </ul>
+    <a href="/">
+      <img src="/img/nav-inverse.png" alt="Logo image">
+    </a>
   </div>
 
   <hr>
 
-  <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
+  <p>Crafted with <i class="fa fa-heart" aria-hidden="true" style="color: #e74c3c;"></i> in Downtown Las Vegas</p>
 </footer>
 </body>
 </html>

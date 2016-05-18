@@ -30,15 +30,11 @@
 </div>
 
 <div class="side-image">
-  <div class="images-wrapper">
-
-
-
+  <div class="images-wrapper-owm">
   </div>
     <div class="side-image-content">
-      <h1>Message with a gradient image</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.</p>
+      <h1>Features and Growth</h1>
+      <p>What began as a temporary redesign turned into a complete overhaul. Our customers were delighted to have a streamlined design to simplify the most daunting and stressful aspects of their businesses. We implemented the ability for our users to split shipments and orders to multiple locations, and finance their purchases directly within the platform. We used this platform and simplicity to onboard the largest franchise group in the country, leveraging the unique flexible payment platform and invoicing features.</p>
   </div>
 </div>
 
