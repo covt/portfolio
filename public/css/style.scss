@@ -9,8 +9,8 @@ $brand: 'grad', serif;
 
 
 // color variables
-$primary: #085078;
-$secondary: #85D8CE;
+$primary: #3EDC81;
+$secondary: #22A7F0;
 $body: #474747;
 $white: #f7f7f7;
 $black: #2B2B2B;
@@ -296,7 +296,6 @@ div.code {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
 
   .project-logo img {
     height: 4em;
@@ -309,36 +308,11 @@ div.code {
     @include clearfix;
     $mobile: new-breakpoint(max-width 500px 4);
     margin: auto;
-    padding: 2em 4px 2em 4px;;
+    padding: 5em 4px 5em 4px;;
     text-align: left;
 
     .project-copy {
       text-align: left;
-
-      h1 {
-        color: $project-color;
-        margin-bottom: 0.5em;
-
-        @include media($large-screen) {
-        }
-      h3 {
-        color: $project-color;
-        font-size: 1.6em;
-        margin-bottom: 0.5em;
-
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
-      }
-      }
-      p {
-        color: $project-color;
-        line-height: 1.5em;
-        @include media($large-screen) {
-          font-size: 1em;
-          max-width: 90%;
-        }
-      }
     }
     .product-copy.left {
         @include span-columns(6);
@@ -369,6 +343,7 @@ div.code {
   $image-gradient-color-right: white;
   $transparency-right: 0.8;
   $horizontal-angle: 90deg;
+  $hero-img: url(img/bg.png);
 
   line-height: 0;
   position: relative;
@@ -377,10 +352,7 @@ div.code {
   p {
       text-align: center;
   }
-  img {
-        padding-top: 3em;
-        opacity: 0.8;
-      }
+
 
   blue {
       color: $secondary;
@@ -410,10 +382,10 @@ div.code {
 
   img {
    height: auto;
-   left: 15%;
+   left: 0;
    position: relative;
-   top: 5%;
-   width: 75%;
+   top: 0;
+   width: 100%;
   }
 
   .copy {
@@ -488,7 +460,7 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-static-content {
-  @include span-columns(7);
+  @include span-columns(12);
   color: #9A9A8A;
   padding: 5em 0;
   position: relative;
@@ -501,13 +473,17 @@ $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-static-content-header {
   @include span-columns(8);
+  @include shift(2);
   color: #9A9A8A;
   padding: 8em 0 8em 0;
   position: relative;
   z-index: 9;
+  text-align: center;
 
   h1 {
       color: $white;
+      font-family: $serif;
+      font-size: 2.5em;
   }
 
   p {
@@ -516,7 +492,7 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-background {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
+  background: url("../img/parallax-bg.png") repeat;
   background-position: top;
   background-size: cover;
   background-color: $primary;
@@ -558,9 +534,8 @@ $parallax-background-height: $parallax-window-height * 2;
 
 .centered-navigation {
   $base-border-radius: 3px !default;
-  $dark-gray: #333 !default;
   $large-screen: em(860) !default;
-  $base-font-color: $dark-gray !default;
+  $base-font-color: $body !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
   $centered-navigation-background: white;
@@ -834,7 +809,7 @@ $parallax-background-height: $parallax-window-height * 2;
 
 .grid-items {
   @include outer-container;
-  $action-color: #43c9cb !default;
+  $action-color: #47EBE0 !default;
   $base-background-color: white !default;
   $medium-screen: 40em !default;
   $large-screen: 53.75em !default;
@@ -842,9 +817,9 @@ $parallax-background-height: $parallax-window-height * 2;
   $grid-item-background: desaturate($action-color, 30%);
   $grid-item-colors:
     desaturate($action-color, 30%),
-    #484848,
-    #f6c135,
-    #f26fa3,
+    #ACBAC9,
+    #FFCF4B,
+    #FF6CA8,
     #A7A891,
     #BDCC97,
     #979EA0;
@@ -884,7 +859,6 @@ $parallax-background-height: $parallax-window-height * 2;
       &:nth-child(#{$i}) {
         $background-from-list: nth($grid-item-colors, $i);
         background-color: $background-from-list;
-        box-shadow: inset 0 0 1px 2px darken($background-from-list, 10%);
 
         &:focus,
         &:hover {
@@ -1022,12 +996,16 @@ $parallax-background-height: $parallax-window-height * 2;
 
     h1 {
       margin-bottom: 0.9em;
+      font-family: $serif;
     }
 
     p {
       color: $body;
       line-height: $base-line-height;
-      margin-bottom: 3em;
+      margin-bottom: 2em;
+      font-family: $sans;
+      font-size: 1.1em;
+      line-height: 1.6em;
     }
   }
 
@@ -1130,8 +1108,7 @@ $parallax-background-height: $parallax-window-height * 2;
 .bullets {
   $base-line-height: 1.5em !default;
   $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
-  $base-font-color: $dark-gray !default;
+  $base-font-color: $body !default;
   $icon-bullet-size: 3.5em;
 
   @include display(flex);
@@ -1321,4 +1298,293 @@ $parallax-background-height: $parallax-window-height * 2;
 
 scroll {
     display: block;
+}
+
+// Type System
+
+article.type-system-serif {
+  $base-border-radius: 3px !default;
+  $base-line-height: 1.5em !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $medium-screen: 40em !default;
+  $base-font-color: $white !default;
+
+  @include clearfix;
+  font-family: $sans;
+  text-align: left;
+
+  h1, h2, h3, p {
+    margin: 0;
+  }
+
+  hr {
+    border-bottom: 1px solid $white;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin: $base-spacing 0;
+  }
+
+  p {
+    color: $base-font-color;
+    line-height: $base-line-height;
+  }
+
+  a {
+    color: $action-color;
+    text-decoration: none;
+  }
+
+  .type {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-family: $sans;
+    font-size: 0.7em;
+    font-weight: 700;
+    margin-bottom: 2em;
+    padding: 0.3em 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    color: $base-font-color;
+    font-family: $serif;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+
+    @include media($medium-screen) {
+      font-size: 2.6em;
+    }
+  }
+
+  h2 {
+    color: $base-font-color;
+    font-family: $serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin-bottom: 0.9em;
+
+    @include media($medium-screen) {
+      font-size: 1.2em;
+    }
+  }
+
+  code {
+    color: $body;
+    background: #F7F7F7;
+    border-radius: $base-border-radius * 1.5;
+    border: 1px solid #E0E0E0;
+    font-family: monaco;
+    font-size: 0.75em;
+    font-style: normal;
+    padding: 0.1em 0.4em;
+    white-space: nowrap;
+  }
+
+  h3 {
+    color: $base-font-color;
+    font-family: $serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 0.4em;
+  }
+
+  p.date {
+    color: transparentize($base-font-color, 0.6);
+    font-family: $serif;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    font-family: $serif;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+
+    span {
+      font-family: $sans;
+      font-weight: 700;
+    }
+  }
+
+  a.read-more {
+    display: inline-block;
+    font-family: $sans;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-left: 0.2em;
+    position: relative;
+    text-transform: uppercase;
+
+    span {
+      font-family: $serif;
+      font-size: 1.5em;
+      font-style: normal;
+      position: absolute;
+      right: -12px;
+      top: -1px;
+    }
+  }
+
+  hr {
+    width: 3em;
+  }
+
+  p.author {
+    font-family: $serif;
+    font-style: italic;
+  }
+}
+
+// PROJECT type
+
+
+article.type-system-serif-project {
+  $base-border-radius: 3px !default;
+  $base-line-height: 1.5em !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $medium-screen: 40em !default;
+  $base-font-color: $body !default;
+
+  @include clearfix;
+  font-family: $sans;
+  text-align: left;
+
+  h1, h2, h3, p {
+    margin: 0;
+  }
+
+  hr {
+    border-bottom: 1px solid $white;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin: $base-spacing 0;
+  }
+
+  p {
+    color: $base-font-color;
+    line-height: $base-line-height;
+  }
+
+  a {
+    color: $action-color;
+    text-decoration: none;
+  }
+
+  .type {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-family: $sans;
+    font-size: 0.7em;
+    font-weight: 700;
+    margin-bottom: 2em;
+    padding: 0.3em 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    color: $base-font-color;
+    font-family: $serif;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+
+    @include media($medium-screen) {
+      font-size: 2.6em;
+    }
+  }
+
+  h2 {
+    color: $base-font-color;
+    font-family: $serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin-bottom: 0.9em;
+
+    @include media($medium-screen) {
+      font-size: 1.2em;
+    }
+  }
+
+  code {
+    color: $body;
+    background: #F7F7F7;
+    border-radius: $base-border-radius * 1.5;
+    border: 1px solid #E0E0E0;
+    font-family: monaco;
+    font-size: 0.75em;
+    font-style: normal;
+    padding: 0.1em 0.4em;
+    white-space: nowrap;
+  }
+
+  h3 {
+    color: $base-font-color;
+    font-family: $serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 0.4em;
+  }
+
+  p.date {
+    color: transparentize($base-font-color, 0.6);
+    font-family: $serif;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    font-family: $sans;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+
+    span {
+      font-family: $sans;
+      font-weight: 700;
+    }
+  }
+
+  a.read-more {
+    display: inline-block;
+    font-family: $sans;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-left: 0.2em;
+    position: relative;
+    text-transform: uppercase;
+
+    span {
+      font-family: $serif;
+      font-size: 1.5em;
+      font-style: normal;
+      position: absolute;
+      right: -12px;
+      top: -1px;
+    }
+  }
+
+  hr {
+    width: 3em;
+  }
+
+  p.author {
+    font-family: $serif;
+    font-style: italic;
+  }
 }

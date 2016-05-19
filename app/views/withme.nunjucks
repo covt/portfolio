@@ -18,13 +18,15 @@
 <div class="project">
 	<div class="project-inner">
 		<div class="project-copy">
-			<h1>Helping Small Businesses Advance</h1>
-            <div class="product-copy left">
-                <p>WithMe Business (Previously OrderWithMe) is an ordering and financial technology platform which helps small businesses work together with purchasing cooperatives to smooth cash flow and increase purchasing power. Many cooperatives in the United States are still using paper catalogs for their members to browse and build orders. WithMe changes all of that. A simple, intuitive platform which gives access to all of the catalog, unifies communication, and allows easy financing for large purchases.</p>
-            </div>
-            <div class="product-copy left">
-                <p> Initially tasked to re-create marketing material for OrderWithMe, I quickly found myself working with the product team to do a responsive redesign for an e-commerce product. The catch: We had a short period to redesign, test, and implement the design. OrderWithMe was rappidly growing, and the design and platform had to be easy not just for our customers to learn, but for our employees as well. We faught the clock, and released a fully responsive redesign and feature set and met our goal in time for the largest cooperative conference in the US.</p>
-            </div>
+      <article class="type-system-serif-project">
+        <h1>Helping Small Businesses Advance</h1>
+        <p>
+          WithMe Business (Previously OrderWithMe) is an ordering and financial technology platform which helps small businesses work together with purchasing cooperatives to smooth cash flow and increase purchasing power. Many cooperatives in the United States are still using paper catalogs for their members to browse and build orders. WithMe changes all of that. A simple, intuitive platform which gives access to all of the catalog, unifies communication, and allows easy financing for large purchases.
+        </p>
+        <p>
+          Initially tasked to re-create marketing material for OrderWithMe, I quickly found myself working with the product team to do a responsive redesign for an e-commerce product. The catch: We had a short period to redesign, test, and implement the design. OrderWithMe was rappidly growing, and the design and platform had to be easy not just for our customers to learn, but for our employees as well. We faught the clock, and released a fully responsive redesign and feature set and met our goal in time for the largest cooperative conference in the US.
+        </p>
+      </article>
 		</div>
 	</div>
 </div>

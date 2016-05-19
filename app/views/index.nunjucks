@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="image-gradient-dynamic">
-    <img src="img/logo-light.svg">
+    <img src="img/bg.png">
     <div class="overlay"></div>
     <div class="copy">
         <h1><green>Chris O'Connell</green></h1>
@@ -19,12 +19,15 @@
 <div id="js-parallax-window" class="parallax-window">
     <div class="parallax-copy">
     <div class="parallax-static-content">
-            <p>
-                Sed gravida quis diam sed pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra gravida lacus in semper. Sed ut sodales lorem. Aliquam tincidunt ac risus vitae tempus. Ut euismod arcu ante, in sodales tellus elementum non. Vivamus vulputate dolor ullamcorper magna bibendum, vel vulputate metus sollicitudin. Nullam sed lobortis nisi, vel tincidunt felis.
-            </p>
-            <p>
-                Sed gravida quis diam sed pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra gravida lacus in semper. Sed ut sodales lorem. Aliquam tincidunt ac risus vitae tempus. Ut euismod arcu ante, in sodales tellus elementum non. Vivamus vulputate dolor ullamcorper magna bibendum, vel vulputate metus sollicitudin. Nullam sed lobortis nisi, vel tincidunt felis.
-            </p>
+      <article class="type-system-serif">
+        <h1>Article Heading</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, perferendis! Odit quisquam <code>code block</code> dicta illum ipsa quod natus iure aliquid necessitatibus veritatis, itaque magnam aliquam, dolorum nostrum nemo, explicabo perspiciatis nobis!</h2>
+        <p class="date">30 Mar 2014</p>
+        <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
+        </p>
+        <h3>Subheading lorem</h3>
+        <p><span>Consequatur ullam, voluptatum</span> incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit. Accusamus. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit! Accusamus.</p>
+      </article>
     </div>
 </div>
   <div id="js-parallax-background" class="parallax-background"></div>
