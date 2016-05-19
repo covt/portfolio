@@ -14,6 +14,7 @@ $secondary: #22A7F0;
 $body: #474747;
 $white: #f7f7f7;
 $black: #2B2B2B;
+$light: #cfcfcf;
 
 // functions
 
@@ -37,6 +38,7 @@ body {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
 
 // scss for headings
@@ -349,10 +351,17 @@ div.code {
   position: relative;
   height:95vh;
   width: 100%;
+
   p {
       text-align: center;
   }
 
+  hr {
+    border: 1px solid transparentize($body, 0.9);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 8em;
+  }
 
   blue {
       color: $secondary;
@@ -381,12 +390,17 @@ div.code {
   }
 
   img {
-   height: auto;
+   height: 100%;
    left: 0;
    position: relative;
    top: 0;
    width: 100%;
-  }
+ }
+
+ .object-fit {
+   display: block;
+   object-fit: cover;
+ }
 
   .copy {
     width: 100%;
@@ -483,11 +497,13 @@ $parallax-background-height: $parallax-window-height * 2;
   h1 {
       color: $white;
       font-family: $serif;
-      font-size: 2.5em;
+      font-size: 3em;
   }
 
   p {
       color: $white;
+      font-size: 1.1em;
+      line-height: 1.6em;
   }
 }
 

@@ -2,12 +2,14 @@
 
 {% block content %}
 <div class="image-gradient-dynamic">
-    <img src="img/bg.png">
+    <img class="object-fit" src="img/bg.png">
     <div class="overlay"></div>
     <div class="copy">
         <h1><green>Chris O'Connell</green></h1>
         <p>UI/UX Designer</p>
         <p>Crafted with NodeJS, Express, Nunjucks & Bourbon</p>
+        <hr>
+        <p>View the source on <a href="javascript:void(0)">GitHub</a></p>
     </div>
     <div>
     </div>
