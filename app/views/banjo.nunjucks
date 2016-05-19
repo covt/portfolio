@@ -34,9 +34,6 @@
 
 <div class="side-image">
   <div class="images-wrapper-banjo">
-
-
-
   </div>
     <div class="side-image-content">
       <h1>Launch and Reception</h1>
@@ -44,5 +41,54 @@
   </div>
 </div>
 
+<div class="project">
+	<div class="project-inner">
+		<div class="project-copy">
+      <article class="type-system-serif-project">
+        <h1>Reimagining a Success</h1>
+        <p>
+          Banjo was already a great mobile application. It had an active user base in the millions, and a majority of the features were widely used. However, the world is always changing, as is the way in which we interact with it, and each other. And sometimes, how we intend our users to use our products is very different from how they take advantage of the features. This was the case with Banjo. An app, which was originally created to see which of your friends are nearby, quickly evolved into a platform that users used to see everything that was happening around them in real time.         </p>
+          <p>
+            When I met the founder of Banjo, we began conversations on how we could make this experience better, and give the users an app that was specifically designed for how they wanted to use it, and not just a clever way of using existing features. The Live Internet. View anything that is happening anywhere, through the eyes of people who are actually there, talking about it in real time. After being invited to join the team, I knew I had huge shoes to fill, and a large user base to please. It was a project that would effect and shape the entire future of Banjo, and a real journey into a new type of product.
+          </p>
+      </article>
+		</div>
+	</div>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="project">
+	<div class="project-inner">
+		<div class="project-copy">
+      <article class="type-system-serif-project">
+        <h1>Reimagining a Success</h1>
+        <p>
+          Banjo was already a great mobile application. It had an active user base in the millions, and a majority of the features were widely used. However, the world is always changing, as is the way in which we interact with it, and each other. And sometimes, how we intend our users to use our products is very different from how they take advantage of the features. This was the case with Banjo. An app, which was originally created to see which of your friends are nearby, quickly evolved into a platform that users used to see everything that was happening around them in real time.         </p>
+          <p>
+            When I met the founder of Banjo, we began conversations on how we could make this experience better, and give the users an app that was specifically designed for how they wanted to use it, and not just a clever way of using existing features. The Live Internet. View anything that is happening anywhere, through the eyes of people who are actually there, talking about it in real time. After being invited to join the team, I knew I had huge shoes to fill, and a large user base to please. It was a project that would effect and shape the entire future of Banjo, and a real journey into a new type of product.
+          </p>
+      </article>
+		</div>
+	</div>
+</div>
 
 {% endblock %}

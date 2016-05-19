@@ -293,11 +293,8 @@ div.code {
   $project-color: $body;
   $gradient-angle: 10deg;
 
-  @include linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top);
-  background-color: #324766;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $white;
+
 
   .project-logo img {
     height: 4em;
@@ -956,7 +953,6 @@ $parallax-background-height: $parallax-window-height * 2;
     @include background(url('http://placehold.it/800x800'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     background-size: cover;
-    border-bottom: $side-image-border;
     display: block;
     min-height: 12em;
     padding: 3em;
@@ -972,7 +968,6 @@ $parallax-background-height: $parallax-window-height * 2;
     @include background(url('/img/banjo-iphone.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     background-size: cover;
-    border-bottom: $side-image-border;
     display: block;
     min-height: 12em;
     padding: 3em;
@@ -988,7 +983,6 @@ $parallax-background-height: $parallax-window-height * 2;
     @include background(url('/img/owm-side.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     background-size: cover;
-    border-bottom: $side-image-border;
     display: block;
     min-height: 12em;
     padding: 3em;
@@ -1003,7 +997,6 @@ $parallax-background-height: $parallax-window-height * 2;
   .side-image-content {
     @include span-columns(12);
     padding: 1em 1em 4em 1em;
-    border-bottom: $side-image-border;
 
     @include media($large-screen) {
       @include span-columns(8);
@@ -1602,5 +1595,89 @@ article.type-system-serif-project {
   p.author {
     font-family: $serif;
     font-style: italic;
+  }
+}
+
+// CARDS
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include outer-container;
+  margin-top: 5em;
+  margin-bottom: 4em;
+}
+
+.card {
+  $base-border-color: $light !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: $white !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $base-font-color: $body !default;
+  $card-border-color: $base-border-color;
+  $card-border: 1px solid $card-border-color;
+  $card-background: lighten($card-border-color, 10%);
+  $card-header-background: $card-background;
+  $card-margin: 1em;
+  $card-image-hover-opacity: 0.7;
+  $card-image-hover-color: #F8F2B4;
+
+  background-color: $card-background;
+  border: $card-border;
+  cursor: pointer;
+  flex-basis: 15em;
+  flex-grow: 1;
+  margin: 0 $card-margin $base-spacing $card-margin;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+  .card-image {
+    background-color: $card-image-hover-color;
+    height: 350px;
+    max-height: 350px;
+    overflow: hidden;
+
+    img {
+      transition: all 0.2s ease-in-out;
+      width: 100%;
+    }
+  }
+
+  .card-header {
+    background-color: $card-header-background;
+    border-bottom: $card-border;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: ($base-spacing / 3) ($base-spacing / 2);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+
+    p {
+      margin: 0 0 ($base-spacing / 2);
+    }
+  }
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+
+    img {
+      opacity: $card-image-hover-opacity;
+    }
+  }
+
+  &:active {
+    background-color: $card-background;
+
+    .card-header {
+      background-color: $card-background;
+    }
   }
 }

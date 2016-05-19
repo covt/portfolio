@@ -280,13 +280,7 @@ div.code {
             max-width: 40%; } }
 
 .project {
-  background-color: #f7f7f7;
-  background-image: -webkit-linear-gradient(-280deg, #f7f7f7, #ffffff);
-  background-image: linear-gradient(10deg,#f7f7f7, #ffffff);
-  background-color: #324766;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-color: #f7f7f7; }
   .project .project-logo img {
     height: 4em;
     margin-bottom: 1em;
@@ -820,7 +814,6 @@ div.code {
     background: url("http://placehold.it/800x800"), linear-gradient(white, white), no-repeat;
     background-color: white;
     background-size: cover;
-    border-bottom: 1px solid rgba(179, 179, 179, 0.2);
     display: block;
     min-height: 12em;
     padding: 3em; }
@@ -835,7 +828,6 @@ div.code {
     background: url("/img/banjo-iphone.png"), linear-gradient(white, white), no-repeat;
     background-color: white;
     background-size: cover;
-    border-bottom: 1px solid rgba(179, 179, 179, 0.2);
     display: block;
     min-height: 12em;
     padding: 3em; }
@@ -850,7 +842,6 @@ div.code {
     background: url("/img/owm-side.png"), linear-gradient(white, white), no-repeat;
     background-color: white;
     background-size: cover;
-    border-bottom: 1px solid rgba(179, 179, 179, 0.2);
     display: block;
     min-height: 12em;
     padding: 3em; }
@@ -863,8 +854,7 @@ div.code {
   .side-image .side-image-content {
     display: table-cell;
     width: 100%;
-    padding: 1em 1em 4em 1em;
-    border-bottom: 1px solid rgba(179, 179, 179, 0.2); }
+    padding: 1em 1em 4em 1em; }
     @media screen and (min-width: 53.75em) {
       .side-image .side-image-content {
         display: table-cell;
@@ -1317,3 +1307,56 @@ article.type-system-serif-project {
   article.type-system-serif-project p.author {
     font-family: "grad", serif;
     font-style: italic; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  margin-bottom: 4em; }
+  .cards::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.card {
+  background-color: #e9e9e9;
+  border: 1px solid #cfcfcf;
+  cursor: pointer;
+  flex-basis: 15em;
+  flex-grow: 1;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out; }
+  .card .card-image {
+    background-color: #F8F2B4;
+    height: 350px;
+    max-height: 350px;
+    overflow: hidden; }
+    .card .card-image img {
+      transition: all 0.2s ease-in-out;
+      width: 100%; }
+  .card .card-header {
+    background-color: #e9e9e9;
+    border-bottom: 1px solid #cfcfcf;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.5em 0.75em;
+    transition: all 0.2s ease-in-out; }
+  .card .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 0.75em 0.75em; }
+    .card .card-copy p {
+      margin: 0 0 0.75em; }
+  .card:focus, .card:hover {
+    cursor: pointer; }
+    .card:focus img, .card:hover img {
+      opacity: 0.7; }
+  .card:active {
+    background-color: #e9e9e9; }
+    .card:active .card-header {
+      background-color: #e9e9e9; }
