@@ -1,0 +1,19 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+
+<div id="js-parallax-window" class="parallax-window">
+<div class="parallax-copy">
+  <div class="parallax-static-content-header">
+        <h1>
+            Uh Oh!
+        </h1>
+        <p>
+            Looks like you're lost! Use the site navigation to find your way back!
+        </p>
+  </div>
+  </div>
+  <div id="js-parallax-background" class="parallax-background"></div>
+</div>
+
+{% endblock %}

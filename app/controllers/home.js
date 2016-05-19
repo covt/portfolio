@@ -25,7 +25,15 @@ router.get('/banjo', function (req, res, next) {
 router.get('/withme', function (req, res, next) {
   var articles = [new Article(), new Article()];
     res.render('withme', {
-      title: "Chris O'Connell - Ban.jo",
+      title: "Chris O'Connell - WithMe",
+      articles: articles
+    });
+});
+
+router.get('*', function (req, res, next) {
+  var articles = [new Article(), new Article()];
+    res.render('404', {
+      title: "Chris O'Connell - 404",
       articles: articles
     });
 });
