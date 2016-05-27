@@ -44,12 +44,15 @@
 	<div class="project-inner">
 		<div class="project-copy">
       <article class="type-system-serif-project">
-        <h1>Helping Small Businesses Advance</h1>
+        <h1>Not Quite SaaS</h1>
         <p>
-          WithMe Business (Previously OrderWithMe) is an ordering and financial technology platform which helps small businesses work together with purchasing cooperatives to smooth cash flow and increase purchasing power. Many cooperatives in the United States are still using paper catalogs for their members to browse and build orders. WithMe changes all of that. A simple, intuitive platform which gives access to all of the catalog, unifies communication, and allows easy financing for large purchases.
+          When creating B2B apps, there's generally very few ways that are commonly excepted for small startups to go – giving your app away for free, or charging a monthly rate – but we decided that these methods wouldn't work for low-income small businesses.
         </p>
         <p>
-          Initially tasked to re-create marketing material for OrderWithMe, I quickly found myself working with the product team to do a responsive redesign for an e-commerce product. The catch: We had a short period to redesign, test, and implement the design. OrderWithMe was rappidly growing, and the design and platform had to be easy not just for our customers to learn, but for our employees as well. We faught the clock, and released a fully responsive redesign and feature set and met our goal in time for the largest cooperative conference in the US.
+          With many of our users being bakers, bike shop owners, and high-volume low-margin businesses, we found a better solution to keep their costs low was a percentage based model. This can be seen in the last of the 3 cards below.
+        </p>
+        <p>
+          This created interesting design and feature challenges to overcome during the imagination phase, and as a team, we discovered many diverse ideas to help increase conversions and complete sales. It was a much appreciated divergence from the traditional SASS model, which allowed for new processes, obervations, and interactions to be employed.
         </p>
       </article>
 		</div>
@@ -59,19 +62,19 @@
 <div class="cards">
   <div class="card">
     <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+      <img src="../img/owm-catalog-sm.jpg" alt="">
     </div>
   </div>
 
   <div class="card">
     <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
+      <img src="../img/owm-preview-sm.jpg" alt="">
     </div>
   </div>
 
   <div class="card">
     <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
+      <img src="../img/owm-signup-sm.png" alt="">
     </div>
   </div>
 </div>
@@ -80,12 +83,15 @@
 	<div class="project-inner">
 		<div class="project-copy">
       <article class="type-system-serif-project">
-        <h1>Helping Small Businesses Advance</h1>
+        <h1>Lessons Learned – Small Teams Can Move Fast</h1>
         <p>
-          WithMe Business (Previously OrderWithMe) is an ordering and financial technology platform which helps small businesses work together with purchasing cooperatives to smooth cash flow and increase purchasing power. Many cooperatives in the United States are still using paper catalogs for their members to browse and build orders. WithMe changes all of that. A simple, intuitive platform which gives access to all of the catalog, unifies communication, and allows easy financing for large purchases.
+          At WithMe, our team was only about 20 people when I joined. The development and product teams combined were about 9 people including Quality Assurance. When we were instructed to rebuild most of the application from scratch I may have had some doubts on such a short timeframe and an even smaller team. There were many roles which needed to be filled to allow us to all focus on our individual areas 100% of our time.
         </p>
         <p>
-          Initially tasked to re-create marketing material for OrderWithMe, I quickly found myself working with the product team to do a responsive redesign for an e-commerce product. The catch: We had a short period to redesign, test, and implement the design. OrderWithMe was rappidly growing, and the design and platform had to be easy not just for our customers to learn, but for our employees as well. We faught the clock, and released a fully responsive redesign and feature set and met our goal in time for the largest cooperative conference in the US.
+          While working with a startup, payroll is often the largest burn rate, and hiring isn't always a solution. This means that everyone has to wear many different hats in which they many not always be comfortable with. A UX Designer doing Quality Assurance. A Front End Developer writing Database Code, etc. The comradery that is created by working together in difficult roles in phenominal, and increases learning productivity exponentially.
+        </p>
+        <p>
+          My largest take away from working as a UX Designer at WithMe, is smaller teams are often the ones to make the impossible a reality, and as we grow as a company together, the larger the company becomes the more you realize how much you have each grown in many different roles within the company. Small Teams may be the most efficient creators and learners, and the comradery that's created is often the same thing that helps early products become so successful.
         </p>
       </article>
 		</div>

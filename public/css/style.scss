@@ -16,6 +16,9 @@ $white: #f7f7f7;
 $black: #2B2B2B;
 $light: #cfcfcf;
 
+// Breaks
+$mobile: new-breakpoint(max-width 500px 4);
+
 // functions
 
 // h1-6 headings
@@ -35,7 +38,11 @@ body {
   margin: 0px;
   color: $body;
 }
+.container {
+  @include outer-container;
 
+  padding: 8px;
+}
 a {
   color: #00B7FF;
   text-decoration: none;
@@ -498,9 +505,10 @@ $parallax-background-height: $parallax-window-height * 2;
   }
 
   p {
-      color: $white;
-      font-size: 1.1em;
-      line-height: 1.6em;
+    font-family: $sans;
+    color: $white;
+    font-size: 1.1em;
+    line-height: 1.6em;
   }
 }
 
@@ -1115,15 +1123,13 @@ $parallax-background-height: $parallax-window-height * 2;
 // BULLETS & VALUE PROPS
 
 .bullets {
-  $base-line-height: 1.5em !default;
-  $action-color: #477DCA !default;
+  $base-line-height: 1.6em !default;
+  $action-color: $body !default;
   $base-font-color: $body !default;
-  $icon-bullet-size: 3.5em;
 
   @include display(flex);
   @include flex-wrap(wrap);
   margin-bottom: $base-line-height;
-  margin: 1em;
   overflow: auto;
   padding: 0;
 
@@ -1132,14 +1138,6 @@ $parallax-background-height: $parallax-window-height * 2;
     @include flex-grow(1);
   }
 
-  .bullet-icon {
-    background: $action-color;
-    border-radius: 50%;
-    float: left;
-    height: $icon-bullet-size;
-    padding: $icon-bullet-size / 4;
-    width: $icon-bullet-size;
-  }
 
   .bullet-icon-1 {
     background: $action-color;
@@ -1154,16 +1152,12 @@ $parallax-background-height: $parallax-window-height * 2;
   }
 
   .bullet-content {
-    margin-left: $icon-bullet-size * 1.4;
-    margin-bottom: 2em;
+    margin: 5em 2em 5em 0;
+    text-align: center;
   }
 
   h2 {
-    border-bottom: 1px solid transparentize($base-font-color, 0.8);
-    display: inline-block;
-    font-size: $icon-bullet-size / 2.5;
-    margin: 0 0 ($icon-bullet-size / 6) 0;
-    padding-top: $icon-bullet-size / 7;
+    font-family: $serif;
   }
 
   li {
@@ -1413,7 +1407,7 @@ article.type-system-serif {
   }
 
   p {
-    font-family: $serif;
+    font-family: $sans;
     font-size: 1.1em;
     line-height: 1.6em;
     margin-bottom: 1.5em;
@@ -1622,7 +1616,7 @@ article.type-system-serif-project {
   $card-header-background: $card-background;
   $card-margin: 1em;
   $card-image-hover-opacity: 0.7;
-  $card-image-hover-color: #F8F2B4;
+  $card-image-hover-color: $primary;
 
   background-color: $card-background;
   border: $card-border;

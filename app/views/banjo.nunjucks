@@ -45,12 +45,16 @@
 	<div class="project-inner">
 		<div class="project-copy">
       <article class="type-system-serif-project">
-        <h1>Reimagining a Success</h1>
+        <h1>Process</h1>
         <p>
-          Banjo was already a great mobile application. It had an active user base in the millions, and a majority of the features were widely used. However, the world is always changing, as is the way in which we interact with it, and each other. And sometimes, how we intend our users to use our products is very different from how they take advantage of the features. This was the case with Banjo. An app, which was originally created to see which of your friends are nearby, quickly evolved into a platform that users used to see everything that was happening around them in real time.         </p>
-          <p>
-            When I met the founder of Banjo, we began conversations on how we could make this experience better, and give the users an app that was specifically designed for how they wanted to use it, and not just a clever way of using existing features. The Live Internet. View anything that is happening anywhere, through the eyes of people who are actually there, talking about it in real time. After being invited to join the team, I knew I had huge shoes to fill, and a large user base to please. It was a project that would effect and shape the entire future of Banjo, and a real journey into a new type of product.
-          </p>
+          We designed Banjo V4 in a very open environment. The team was expanding rapidly and we wanted to ensure that we had feedback from everyone that had joined the team. With offices split between San Francisco and Las Vegas, we used Skype for cross office communication for realtime feedback, and I would travel between offices during sprints.
+        </p>
+        <p>
+          Each design began on a large white-dry board in the middle of our office where we allowed the entire team to post sticky notes on rough sketches and wireframes for feedback. Once a design moved to digital wireframes, we would share the mocks using both Flinto and InVision App, as well as post physical prints on the wall for written feedback.
+        </p>
+        <p>
+          I believe it's important to see designs in different scenarios, as each time you notice something new. We collected feedback internally until a majority of the team felt comfortable with what we had created, then we conducted research with everyday users. Our users helped us identify how the app would be used once we released it to the wild. This allowed us to make a few major UX updates which I believe were the key to Banjo's success.
+        </p>
       </article>
 		</div>
 	</div>
@@ -59,19 +63,19 @@
 <div class="cards">
   <div class="card">
     <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+      <img src="../img/banjo-home.png" alt="">
     </div>
   </div>
 
   <div class="card">
     <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
+      <img src="../img/banjo-music.png" alt="">
     </div>
   </div>
 
   <div class="card">
     <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
+      <img src="../img/banjo-notifications.png" alt="">
     </div>
   </div>
 </div>
@@ -80,12 +84,13 @@
 	<div class="project-inner">
 		<div class="project-copy">
       <article class="type-system-serif-project">
-        <h1>Reimagining a Success</h1>
+        <h1>Takeaway – Transparency</h1>
         <p>
-          Banjo was already a great mobile application. It had an active user base in the millions, and a majority of the features were widely used. However, the world is always changing, as is the way in which we interact with it, and each other. And sometimes, how we intend our users to use our products is very different from how they take advantage of the features. This was the case with Banjo. An app, which was originally created to see which of your friends are nearby, quickly evolved into a platform that users used to see everything that was happening around them in real time.         </p>
-          <p>
-            When I met the founder of Banjo, we began conversations on how we could make this experience better, and give the users an app that was specifically designed for how they wanted to use it, and not just a clever way of using existing features. The Live Internet. View anything that is happening anywhere, through the eyes of people who are actually there, talking about it in real time. After being invited to join the team, I knew I had huge shoes to fill, and a large user base to please. It was a project that would effect and shape the entire future of Banjo, and a real journey into a new type of product.
-          </p>
+          Banjo was the first app in which I lead the design process. I couldn't be more proud with the team or the end result. I learned a lot of lessons from Banjo that I have taken to every project I have worked on since, particularly the User Research process. I employed the use of Personas and encouraged testing of our mockups by our most loyal users. Transparency in the design process can create a night or day difference in the finished product. What we learned is, you can make a product as pretty as you want, and sometimes there's trade-offs between functionality and beauty.
+        </p>
+        <p>
+          Before Banjo, many of my projects were not allowed to be shared in an open environment until they were launched. I have learned that feedback is a designer and developers best friend, and the more eyes on the project, the better. A designers worst critic is themselves, and those citiques can often cloud what is important for the overall vision. Teamwork and Transparency creates a much more open and vivid environment to create the best possible product.
+        </p>
       </article>
 		</div>
 	</div>

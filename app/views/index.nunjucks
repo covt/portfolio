@@ -8,8 +8,6 @@
         <h1><green>Chris O'Connell</green></h1>
         <p>UI/UX Designer</p>
         <p>Crafted with NodeJS, Express, Nunjucks & Bourbon</p>
-        <hr>
-        <p>View the source on <a href="javascript:void(0)">GitHub</a></p>
     </div>
     <div>
     </div>
@@ -18,40 +16,50 @@
     </div>
 </div>
 
+<div class="container">
+<ul class="bullets">
+  <li class="bullet">
+    <div class="bullet-content">
+      <h1><i class="fa fa-cubes" aria-hidden="true"></i></h1>
+      <h2>User Experience</h2>
+      <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+      </div>
+  </li>
+  <li class="bullet">
+    <div class="bullet-content">
+      <h1><i class="fa fa-pencil" aria-hidden="true"></i></h1>
+      <h2>Design</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+    </div>
+  </li>
+  <li class="bullet">
+    <div class="bullet-content">
+      <h1><i class="fa fa-code" aria-hidden="true"></i></h1>
+      <h2>Front End</h2>
+      <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+    </div>
+  </li>
+</ul>
+</div>
+
 <div class="project">
 	<div class="project-inner">
 		<div class="project-copy">
       <article class="type-system-serif-project">
-        <h1>Helping Small Businesses Advance</h1>
+        <h1>Product. Design. Development.</h1>
         <p>
-          WithMe Business (Previously OrderWithMe) is an ordering and financial technology platform which helps small businesses work together with purchasing cooperatives to smooth cash flow and increase purchasing power. Many cooperatives in the United States are still using paper catalogs for their members to browse and build orders. WithMe changes all of that. A simple, intuitive platform which gives access to all of the catalog, unifies communication, and allows easy financing for large purchases.
+          So, who is Chris O'Connell? I am a self taught designer and web developer. I have been designing and developing websites for over 10 years, with over 4 years in startup environments. I've worked with individuals, small teams, and have helped companies scale from as few as 5 employees, to as large as 120.
         </p>
         <p>
-          Initially tasked to re-create marketing material for OrderWithMe, I quickly found myself working with the product team to do a responsive redesign for an e-commerce product. The catch: We had a short period to redesign, test, and implement the design. OrderWithMe was rappidly growing, and the design and platform had to be easy not just for our customers to learn, but for our employees as well. We faught the clock, and released a fully responsive redesign and feature set and met our goal in time for the largest cooperative conference in the US.
+          I am primarily a User Experience designer, focusing on product usability, function, and visual aesthetics. I believe how a user experiences a product is the single most important aspect, with the aesthetic appeal following close behind.
+        </p>
+        <p>
+          I am an entrepreneur at heart. Most recently, I founded Reactor Publishing, an open-source publishing CMS for weekly editorials, as well as a weekly publication for Southern Nevada called "The Las Vegas Reactor".
         </p>
       </article>
 		</div>
 	</div>
 </div>
-
-
-<div id="js-parallax-window" class="parallax-window">
-    <div class="parallax-copy">
-    <div class="parallax-static-content">
-      <article class="type-system-serif">
-        <h1>Article Heading</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, perferendis! Odit quisquam <code>code block</code> dicta illum ipsa quod natus iure aliquid necessitatibus veritatis, itaque magnam aliquam, dolorum nostrum nemo, explicabo perspiciatis nobis!</h2>
-        <p class="date">30 Mar 2014</p>
-        <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
-        </p>
-        <h3>Subheading lorem</h3>
-        <p><span>Consequatur ullam, voluptatum</span> incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit. Accusamus. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit! Accusamus.</p>
-      </article>
-    </div>
-</div>
-  <div id="js-parallax-background" class="parallax-background"></div>
-</div>
-
 
 
 {% endblock %}
