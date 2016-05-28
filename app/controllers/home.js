@@ -30,6 +30,14 @@ router.get('/withme', function (req, res, next) {
     });
 });
 
+router.get('/contact', function (req, res, next) {
+  var articles = [new Article(), new Article()];
+    res.render('contact', {
+      title: "Chris O'Connell - Contact",
+      articles: articles
+    });
+});
+
 router.get('*', function (req, res, next) {
   var articles = [new Article(), new Article()];
     res.render('404', {

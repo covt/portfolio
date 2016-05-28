@@ -320,13 +320,13 @@ div.code {
     .project-copy {
       text-align: left;
     }
-    .product-copy.left {
+    .project-copy.left {
         @include span-columns(6);
         @include media($mobile) {
             @include span-columns(3);
         }
     }
-        .product-copy.right {
+        .project-copy.right {
         @include span-columns(6);
         @include media($mobile) {
             @include span-columns(3);
@@ -1467,7 +1467,7 @@ article.type-system-serif-project {
   }
 
   hr {
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $body;
     border-left: 0;
     border-right: 0;
     border-top: 0;
@@ -1673,5 +1673,89 @@ article.type-system-serif-project {
     .card-header {
       background-color: $card-background;
     }
+  }
+}
+
+
+// INPUTS
+
+.contact {
+
+  .form {
+    width:340px;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    box-sizing:border-box;
+    font-family: $sans;
+    position:relative
+  }
+
+  h2 {
+    font-family: $serif;
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:$body;
+  }
+
+  input {
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family: $sans;
+    font-size: 1em;
+    transition:all .3s;
+    border-bottom:2px solid $primary;
+  }
+  input:focus {
+    border-bottom:2px solid $secondary;
+  }
+
+  p:before {
+    content:attr(type);
+    display:block;
+    font-size:1.3em;
+    color:#5a5a5a
+  }
+
+  button {
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid $primary;
+    background:0;
+    color:$body;
+    transition:all .3s
+  }
+
+  button:hover {
+    background:$secondary;
+    border:2px solid $secondary;
+    color:#fff
+  }
+
+  div {
+    content:'Hi';
+    position:absolute;
+    bottom:-15px;
+    right:-20px;
+    background:#50505a;
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000
+  }
+
+  span {
+    margin:0 5px 0 15px
   }
 }

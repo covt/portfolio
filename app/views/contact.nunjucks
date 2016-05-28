@@ -1,0 +1,33 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+
+<div class="project">
+	<div class="project-inner">
+		<div class="project-copy left">
+      <article class="type-system-serif-project">
+        <h1>Let's Chat</h1>
+        <p>
+					If you feel that we're a great fit, please get in contact with me. I am always looking for great startups and individuals to work with.
+		    </p>
+				<p>
+					Fill out the form below and I will get in touch with you. I will generally respond within 24 hours. Please provide as much information as possible.
+				</p>
+      </article>
+		</div>
+		<div class="project-copy right">
+			<div class="contact">
+				<form method="POST" action="https://formspree.io/chris@dsgnby.co">
+				  <p type="Name:"><input type="name" name="name" placeholder="Your Name" required=""></p>
+	        <p type="Email:"><input type="email" name="_replyto" placeholder="Your email" required=""></p>
+          <p type="Message:"><input name="message" rows="5" placeholder="Your message" required=""></input></p>
+          <button type="submit">Submit Message</button>
+        </form>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
