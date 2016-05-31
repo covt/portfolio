@@ -290,7 +290,7 @@ div.code {
             max-width: 40%; } }
 
 .project {
-  background-color: #f7f7f7; }
+  background-color: #fcfcfc; }
   .project .project-logo img {
     height: 4em;
     margin-bottom: 1em;
@@ -324,7 +324,7 @@ div.code {
           float: left;
           display: block;
           margin-right: 7.42297%;
-          width: 73.14426%; }
+          width: 100%; }
           .project .project-inner .project-copy.left:last-child {
             margin-right: 0; } }
     .project .project-inner .project-copy.right {
@@ -339,7 +339,7 @@ div.code {
           float: left;
           display: block;
           margin-right: 7.42297%;
-          width: 73.14426%; }
+          width: 100%; }
           .project .project-inner .project-copy.right:last-child {
             margin-right: 0; } }
 
@@ -461,7 +461,7 @@ div.code {
   .parallax-static-content:last-child {
     margin-right: 0; }
   .parallax-static-content p {
-    color: #f7f7f7; }
+    color: #fcfcfc; }
 
 .parallax-static-content-header {
   float: left;
@@ -477,12 +477,12 @@ div.code {
   .parallax-static-content-header:last-child {
     margin-right: 0; }
   .parallax-static-content-header h1 {
-    color: #f7f7f7;
+    color: #fcfcfc;
     font-family: "grad", serif;
     font-size: 3em; }
   .parallax-static-content-header p {
     font-family: "freight-sans-pro", sans-serif;
-    color: #f7f7f7;
+    color: #fcfcfc;
     font-size: 1.1em;
     line-height: 1.6em; }
 
@@ -1111,13 +1111,13 @@ article.type-system-serif {
   article.type-system-serif h1, article.type-system-serif h2, article.type-system-serif h3, article.type-system-serif p {
     margin: 0; }
   article.type-system-serif hr {
-    border-bottom: 1px solid #f7f7f7;
+    border-bottom: 1px solid #fcfcfc;
     border-left: 0;
     border-right: 0;
     border-top: 0;
     margin: 1.5em 0; }
   article.type-system-serif p {
-    color: #f7f7f7;
+    color: #fcfcfc;
     line-height: 1.5em; }
   article.type-system-serif a {
     color: #477DCA;
@@ -1133,7 +1133,7 @@ article.type-system-serif {
     text-align: left;
     text-transform: uppercase; }
   article.type-system-serif h1 {
-    color: #f7f7f7;
+    color: #fcfcfc;
     font-family: "grad", serif;
     font-size: 2em;
     font-weight: 700;
@@ -1142,7 +1142,7 @@ article.type-system-serif {
       article.type-system-serif h1 {
         font-size: 2.6em; } }
   article.type-system-serif h2 {
-    color: #f7f7f7;
+    color: #fcfcfc;
     font-family: "grad", serif;
     font-size: 1em;
     font-style: italic;
@@ -1163,14 +1163,14 @@ article.type-system-serif {
     padding: 0.1em 0.4em;
     white-space: nowrap; }
   article.type-system-serif h3 {
-    color: #f7f7f7;
+    color: #fcfcfc;
     font-family: "grad", serif;
     font-size: 1.4em;
     font-weight: 400;
     line-height: 1.3em;
     margin-bottom: 0.4em; }
   article.type-system-serif p.date {
-    color: rgba(247, 247, 247, 0.4);
+    color: rgba(252, 252, 252, 0.4);
     font-family: "grad", serif;
     font-size: 0.9em;
     font-style: italic;
@@ -1213,6 +1213,8 @@ article.type-system-serif-project {
     display: table; }
   article.type-system-serif-project h1, article.type-system-serif-project h2, article.type-system-serif-project h3, article.type-system-serif-project p {
     margin: 0; }
+  article.type-system-serif-project h1 {
+    text-align: center; }
   article.type-system-serif-project hr {
     border-bottom: 1px solid #474747;
     border-left: 0;

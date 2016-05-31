@@ -12,7 +12,7 @@ $brand: 'grad', serif;
 $primary: #3EDC81;
 $secondary: #22A7F0;
 $body: #474747;
-$white: #f7f7f7;
+$white: #fcfcfc;
 $black: #2B2B2B;
 $light: #cfcfcf;
 
@@ -323,13 +323,13 @@ div.code {
     .project-copy.left {
         @include span-columns(6);
         @include media($mobile) {
-            @include span-columns(3);
+            @include span-columns(4);
         }
     }
         .project-copy.right {
         @include span-columns(6);
         @include media($mobile) {
-            @include span-columns(3);
+            @include span-columns(4);
         }
     }
   }
@@ -1464,6 +1464,10 @@ article.type-system-serif-project {
 
   h1, h2, h3, p {
     margin: 0;
+  }
+
+  h1 {
+    text-align: center;
   }
 
   hr {
