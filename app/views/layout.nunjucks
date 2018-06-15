@@ -53,16 +53,17 @@
   {% block content %}{% endblock %}
 
   <div class="grid-items">
-    <a href="/banjo" class="grid-item grid-item-big">
-      <img src="../img/banjo-logo.png" alt="">
-      <h1>Banjo</h1>
-      <p>UI/UX Design – Mobile App Re-Imagining</p>
+    <a href="/chute" class="grid-item grid-item-big">
+      <img src="../img/chute-logo.svg" alt="">
+      <h1>Chute</h1>
+      <p>Product Design – Web & Mobile</p>
+      <p>http://www.getchute.com/</p>
     </a>
-  <a href="javascript:void(0)" class="grid-item">
-    <img src="../img/reactor-logo.png" alt="">
-    <h1>Reactor Publishing</h1>
-    <p>Founder - Web Publishing CMS</p>
-    <p>Coming Soon</p>
+  <a href="/banjo" class="grid-item">
+    <img src="../img/banjo-logo.png" alt="">
+    <h1>Banjo</h1>
+    <p>UI/UX Design – Mobile App</p>
+    <p>http://ban.jo/</p>
   </a>
   <a href="javascript:void(0)" class="grid-item">
     <img src="../img/dtp-logo.png" alt="">
@@ -74,6 +75,7 @@
     <img src="../img/withme-logo.png" alt="">
     <h1>WithMe</h1>
     <p>UI/UX Design – eCommerce Platform Redesign</p>
+    <p>http://with.me/</p>
   </a>
 </div>
 
@@ -86,7 +88,7 @@
 
   <hr>
 
-  <p>Crafted with <i class="fa fa-heart" aria-hidden="true" style="color: #e74c3c;"></i> in Downtown Las Vegas</p>
+  <p>Crafted with <i class="fa fa-heart" aria-hidden="true" style="color: #e74c3c;"></i> in Berkeley, California.</p>
 </footer>
 </body>
 </html>

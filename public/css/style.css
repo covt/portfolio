@@ -246,8 +246,8 @@ div.code {
     display: table; }
 
 .hero {
-  background: url("https:\a //raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(-280deg, #20392B, #7F99BE), no-repeat;
-  background: url("https:\a //raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat;
+  background: url("https:\a//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(-280deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
+  background: url("https:\a//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
@@ -290,7 +290,7 @@ div.code {
             max-width: 40%; } }
 
 .project {
-  background-color: #fcfcfc; }
+  background-color: #fafafa; }
   .project .project-logo img {
     height: 4em;
     margin-bottom: 1em;
@@ -461,7 +461,7 @@ div.code {
   .parallax-static-content:last-child {
     margin-right: 0; }
   .parallax-static-content p {
-    color: #fcfcfc; }
+    color: #fafafa; }
 
 .parallax-static-content-header {
   float: left;
@@ -477,12 +477,12 @@ div.code {
   .parallax-static-content-header:last-child {
     margin-right: 0; }
   .parallax-static-content-header h1 {
-    color: #fcfcfc;
+    color: #fafafa;
     font-family: "grad", serif;
     font-size: 3em; }
   .parallax-static-content-header p {
     font-family: "freight-sans-pro", sans-serif;
-    color: #fcfcfc;
+    color: #fafafa;
     font-size: 1.1em;
     line-height: 1.6em; }
 
@@ -510,6 +510,17 @@ div.code {
 
 .parallax-background-owm {
   background: url("../img/owm-project-bg.png") repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: #3EDC81;
+  height: 100em;
+  left: 0;
+  position: absolute;
+  top: -16.66667em;
+  width: 100%; }
+
+.parallax-background-chute {
+  background: url("../img/chute-mockup.png") repeat;
   background-size: cover;
   background-position: top;
   background-color: #3EDC81;
@@ -710,7 +721,7 @@ div.code {
     content: "";
     display: table; }
   .grid-items .grid-item {
-    background: #66ccc6;
+    background: #26bbd9;
     border-bottom: 9px solid white;
     border-left: 4.5px solid white;
     border-right: 4.5px solid white;
@@ -729,16 +740,16 @@ div.code {
       .grid-items .grid-item {
         width: 33.33333%; } }
     .grid-items .grid-item:nth-child(1) {
-      background-color: #66ccc6; }
+      background-color: #26bbd9; }
       .grid-items .grid-item:nth-child(1):focus, .grid-items .grid-item:nth-child(1):hover {
-        background-color: #3fc0b7;
+        background-color: #1f96ad;
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover; }
     .grid-items .grid-item:nth-child(2) {
-      background-color: #ACBAC9; }
+      background-color: #3fc0b7; }
       .grid-items .grid-item:nth-child(2):focus, .grid-items .grid-item:nth-child(2):hover {
-        background-color: #8da0b5;
+        background-color: #329a92;
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover; }
@@ -799,8 +810,8 @@ div.code {
     .grid-items .grid-item-big p {
       max-width: 60%; } }
   .grid-items .grid-item-image {
-    background: url("https:\a //raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
-    background-color: #66ccc6;
+    background: url("https:\a//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
+    background-color: #26bbd9;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -821,8 +832,8 @@ div.code {
       width: 100%;
       table-layout: fixed; } }
   .side-image .images-wrapper {
-    background: url("http://placehold.it/800x800"), -webkit-linear-gradient(white, white), no-repeat;
-    background: url("http://placehold.it/800x800"), linear-gradient(white, white), no-repeat;
+    background: url("http://placehold.it/800x800"), -webkit-linear-gradient(white, white), no-repeat white scroll;
+    background: url("http://placehold.it/800x800"), linear-gradient(white, white), no-repeat white scroll;
     background-color: white;
     background-size: cover;
     display: block;
@@ -835,8 +846,8 @@ div.code {
         background-position: bottom;
         background-size: cover; } }
   .side-image .images-wrapper-banjo {
-    background: url("/img/banjo-iphone.png"), -webkit-linear-gradient(white, white), no-repeat;
-    background: url("/img/banjo-iphone.png"), linear-gradient(white, white), no-repeat;
+    background: url("/img/banjo-iphone.png"), -webkit-linear-gradient(white, white), no-repeat white scroll;
+    background: url("/img/banjo-iphone.png"), linear-gradient(white, white), no-repeat white scroll;
     background-color: white;
     background-size: cover;
     display: block;
@@ -849,8 +860,8 @@ div.code {
         background-position: bottom;
         background-size: cover; } }
   .side-image .images-wrapper-owm {
-    background: url("/img/owm-side.png"), -webkit-linear-gradient(white, white), no-repeat;
-    background: url("/img/owm-side.png"), linear-gradient(white, white), no-repeat;
+    background: url("/img/owm-side.png"), -webkit-linear-gradient(white, white), no-repeat white scroll;
+    background: url("/img/owm-side.png"), linear-gradient(white, white), no-repeat white scroll;
     background-color: white;
     background-size: cover;
     display: block;
@@ -883,8 +894,8 @@ div.code {
       line-height: 1.6em; }
 
 .device-background {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(-280deg, #0A120D, #162C4C), no-repeat;
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #0A120D, #162C4C), no-repeat;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(-280deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 20em;
@@ -1111,13 +1122,13 @@ article.type-system-serif {
   article.type-system-serif h1, article.type-system-serif h2, article.type-system-serif h3, article.type-system-serif p {
     margin: 0; }
   article.type-system-serif hr {
-    border-bottom: 1px solid #fcfcfc;
+    border-bottom: 1px solid #fafafa;
     border-left: 0;
     border-right: 0;
     border-top: 0;
     margin: 1.5em 0; }
   article.type-system-serif p {
-    color: #fcfcfc;
+    color: #fafafa;
     line-height: 1.5em; }
   article.type-system-serif a {
     color: #477DCA;
@@ -1133,7 +1144,7 @@ article.type-system-serif {
     text-align: left;
     text-transform: uppercase; }
   article.type-system-serif h1 {
-    color: #fcfcfc;
+    color: #fafafa;
     font-family: "grad", serif;
     font-size: 2em;
     font-weight: 700;
@@ -1142,7 +1153,7 @@ article.type-system-serif {
       article.type-system-serif h1 {
         font-size: 2.6em; } }
   article.type-system-serif h2 {
-    color: #fcfcfc;
+    color: #fafafa;
     font-family: "grad", serif;
     font-size: 1em;
     font-style: italic;
@@ -1163,14 +1174,14 @@ article.type-system-serif {
     padding: 0.1em 0.4em;
     white-space: nowrap; }
   article.type-system-serif h3 {
-    color: #fcfcfc;
+    color: #fafafa;
     font-family: "grad", serif;
     font-size: 1.4em;
     font-weight: 400;
     line-height: 1.3em;
     margin-bottom: 0.4em; }
   article.type-system-serif p.date {
-    color: rgba(252, 252, 252, 0.4);
+    color: rgba(250, 250, 250, 0.4);
     font-family: "grad", serif;
     font-size: 0.9em;
     font-style: italic;

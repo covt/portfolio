@@ -14,6 +14,14 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.get('/chute', function (req, res, next) {
+  var articles = [new Article(), new Article()];
+    res.render('chute', {
+      title: "Chris O'Connell - Chute",
+      articles: articles
+    });
+});
+
 router.get('/banjo', function (req, res, next) {
   var articles = [new Article(), new Article()];
     res.render('banjo', {

@@ -12,7 +12,7 @@ $brand: 'grad', serif;
 $primary: #3EDC81;
 $secondary: #22A7F0;
 $body: #474747;
-$white: #fcfcfc;
+$white: #fafafa;
 $black: #2B2B2B;
 $light: #cfcfcf;
 
@@ -548,6 +548,18 @@ $parallax-background-height: $parallax-window-height * 2;
   width: 100%;
 }
 
+.parallax-background-chute {
+  background: url("../img/chute-mockup.png") repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: $primary;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
 // Based on http://codepen.io/skeurentjes/
 
 
@@ -830,7 +842,7 @@ $parallax-background-height: $parallax-window-height * 2;
 
 .grid-items {
   @include outer-container;
-  $action-color: #47EBE0 !default;
+  $action-color: #00D5FF !default;
   $base-background-color: white !default;
   $medium-screen: 40em !default;
   $large-screen: 53.75em !default;
@@ -838,7 +850,7 @@ $parallax-background-height: $parallax-window-height * 2;
   $grid-item-background: desaturate($action-color, 30%);
   $grid-item-colors:
     desaturate($action-color, 30%),
-    #ACBAC9,
+    #3fc0b7,
     #FFCF4B,
     #FF6CA8,
     #A7A891,

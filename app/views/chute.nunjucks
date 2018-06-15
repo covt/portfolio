@@ -1,0 +1,111 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+<div id="js-parallax-window" class="parallax-window">
+<div class="parallax-copy">
+  <div class="parallax-static-content-header">
+        <h1>
+            Chute
+        </h1>
+        <p>
+          Chute is the first end-to-end user-generated content marketing solution that streamlines UGC search and discovery, curation, rights management, publishing, and brand insights.
+        </p>
+  </div>
+  </div>
+  <div id="js-parallax-background" class="parallax-background-chute"></div>
+</div>
+
+<div class="project">
+	<div class="project-inner">
+		<div class="project-copy">
+      <article class="type-system-serif-project">
+        <h1>Going Up</h1>
+        <p>
+          I joined the Chute team in March of 2017 as the sole designer of the newly restructured product team. As a lean team of just 3, we got to work.
+        </p>
+        <p>
+          The product was legacy, being designed almost 5 years prior to my joining, with very little attention to updating the user experience, or optimizing for user flow. Instead, a separate platform was built that lived along side the core platform, which offered improved UX, but fewer features that users needed to be successful with the overall product. .
+        </p>
+        <p>
+          We immediately began white boarding, auditing our platforms for feature parity, interviewing our users, and ultimately, decided it was our top priority to modernize, improve, and unify our platforms into a single cohesive solution that was delightful to use, while helping our developers have an easier timing maintaining our product.
+        </p>
+        <p>
+          We quickly new our solution was to redesign our platform and update our architecture.
+        </p>
+      </article>
+		</div>
+	</div>
+</div>
+
+<div class="side-image">
+  <div class="images-wrapper-owm">
+  </div>
+    <div class="side-image-content">
+      <h1>Simple and Modular</h1>
+      <p>What began as a temporary redesign turned into a complete overhaul. Our customers were delighted to have a streamlined design to simplify the most daunting and stressful aspects of their businesses. We implemented the ability for our users to split shipments and orders to multiple locations, and finance their purchases directly within the platform. We used this platform and simplicity to onboard the largest franchise group in the country, leveraging the unique flexible payment platform and invoicing features.</p>
+  </div>
+</div>
+
+<div class="project-chute-full">
+  Test
+</div>
+
+<div class="project">
+	<div class="project-inner">
+		<div class="project-copy">
+      <article class="type-system-serif-project">
+        <h1>Not Quite SaaS</h1>
+        <p>
+          When creating B2B apps, there's generally very few ways that are commonly excepted for small startups to go – giving your app away for free, or charging a monthly rate – but we decided that these methods wouldn't work for low-income small businesses.
+        </p>
+        <p>
+          With many of our users being bakers, bike shop owners, and high-volume low-margin businesses, we found a better solution to keep their costs low was a percentage based model. This can be seen in the last of the 3 cards below.
+        </p>
+        <p>
+          This created interesting design and feature challenges to overcome during the imagination phase, and as a team, we discovered many diverse ideas to help increase conversions and complete sales. It was a much appreciated divergence from the traditional SASS model, which allowed for new processes, obervations, and interactions to be employed.
+        </p>
+      </article>
+		</div>
+	</div>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <div class="card-image">
+      <img src="../img/owm-catalog-sm.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="../img/owm-preview-sm.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="../img/owm-signup-sm.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="project">
+	<div class="project-inner">
+		<div class="project-copy">
+      <article class="type-system-serif-project">
+        <h1>Lessons Learned – Small Teams Can Move Fast</h1>
+        <p>
+          At WithMe, our team was only about 20 people when I joined. The development and product teams combined were about 9 people including Quality Assurance. When we were instructed to rebuild most of the application from scratch I may have had some doubts on such a short timeframe and an even smaller team. There were many roles which needed to be filled to allow us to all focus on our individual areas 100% of our time.
+        </p>
+        <p>
+          While working with a startup, payroll is often the largest burn rate, and hiring isn't always a solution. This means that everyone has to wear many different hats in which they many not always be comfortable with. A UX Designer doing Quality Assurance. A Front End Developer writing Database Code, etc. The comradery that is created by working together in difficult roles in phenominal, and increases learning productivity exponentially.
+        </p>
+        <p>
+          My largest take away from working as a UX Designer at WithMe, is smaller teams are often the ones to make the impossible a reality, and as we grow as a company together, the larger the company becomes the more you realize how much you have each grown in many different roles within the company. Small Teams may be the most efficient creators and learners, and the comradery that's created is often the same thing that helps early products become so successful.
+        </p>
+      </article>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

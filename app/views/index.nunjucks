@@ -6,10 +6,8 @@
     <div class="overlay"></div>
     <div class="copy">
         <h1><green>Chris O'Connell</green></h1>
-        <p>UI/UX Designer</p>
+        <p>Product Designer</p>
         <p>Crafted with NodeJS, Express, Nunjucks & Bourbon</p>
-    </div>
-    <div>
     </div>
     <div class="arrow-container">
         <i class="arrow arrow-down"></i>
@@ -17,29 +15,29 @@
 </div>
 
 <div class="container">
-<ul class="bullets">
-  <li class="bullet">
-    <div class="bullet-content">
-      <h1><i class="fa fa-cubes" aria-hidden="true"></i></h1>
-      <h2>User Experience</h2>
-      <p>User Experience Design is the most important aspect of any consumer facing product. With 4 years of professional experience creating Wireframes, conducting User Research, and Creating Personas, I have created a vast toolset to provide clients with top tier User Experiences.</p>
+  <ul class="bullets">
+    <li class="bullet">
+      <div class="bullet-content">
+        <h1><i class="fa fa-cubes" aria-hidden="true"></i></h1>
+        <h2>User Experience</h2>
+        <p>User Experience Design is the most important aspect of any consumer facing product. With 4 years of professional experience creating Wireframes, conducting User Research, and Creating Personas, I have created a vast toolset to provide clients with top tier User Experiences.</p>
+        </div>
+    </li>
+    <li class="bullet">
+      <div class="bullet-content">
+        <h1><i class="fa fa-pencil" aria-hidden="true"></i></h1>
+        <h2>Design</h2>
+        <p>Ranging from Logo Design, to User Interface design, I have over 8 years experience crafting featured designs for clients and startups. My design work has been featured on both the front page of the Google App Store and the Apple App Store in over 16 countries.</p>
       </div>
-  </li>
-  <li class="bullet">
-    <div class="bullet-content">
-      <h1><i class="fa fa-pencil" aria-hidden="true"></i></h1>
-      <h2>Design</h2>
-      <p>Ranging from Logo Design, to User Interface design, I have over 8 years experience crafting featured designs for clients and startups. My design work has been featured on both the front page of the Google App Store and the Apple App Store in over 16 countries.</p>
-    </div>
-  </li>
-  <li class="bullet">
-    <div class="bullet-content">
-      <h1><i class="fa fa-code" aria-hidden="true"></i></h1>
-      <h2>Front End</h2>
-      <p>I have been developing websites for nearly 10 years, with experience in HTML, SASS, Javascript, and MVC frameworks. I also have experience with NodeJS, Meteor, and AngularJS, and my tools expand on a daily basis. I'm eager to become more efficient every day.</p>
-    </div>
-  </li>
-</ul>
+    </li>
+    <li class="bullet">
+      <div class="bullet-content">
+        <h1><i class="fa fa-code" aria-hidden="true"></i></h1>
+        <h2>Front End</h2>
+        <p>I have been developing websites for nearly 10 years, with experience in HTML, SASS, Javascript, and MVC frameworks. I also have experience with NodeJS, Meteor, and AngularJS, and my tools expand on a daily basis. I'm eager to become more efficient every day.</p>
+      </div>
+    </li>
+  </ul>
 </div>
 
 <div class="project">
@@ -54,10 +52,10 @@
           I am primarily a User Experience designer, focusing on product usability, function, and visual aesthetics. I believe how a user experiences a product is the single most important aspect, with the aesthetic appeal following close behind.
         </p>
         <p>
-          I am an entrepreneur at heart. Most recently, I founded Reactor Publishing, an open-source publishing CMS for weekly editorials, as well as a weekly publication for Southern Nevada called <a href="javascript:void(0)">The Las Vegas Reactor</a>.
+          I am an entrepreneur at heart. I strive in a startup environment where I am able to actively contribute to the future of the product, participate in difficult decisions, and collaborate closely with my peers.
         </p>
 
-        <h2>Want to learn more? <a href="/contact">Contact Me.</a></h2>
+        <h2>Want to learn more? <a href="/contact">Contact Me</a></h2>
       </article>
 		</div>
 	</div>
