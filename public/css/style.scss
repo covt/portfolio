@@ -1014,6 +1014,21 @@ $parallax-background-height: $parallax-window-height * 2;
     }
   }
 
+  .images-wrapper-chute {
+    @include background(url('/img/chute-side.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    background-color: $side-image-background-top;
+    background-size: cover;
+    display: block;
+    min-height: 12em;
+    padding: 3em;
+
+    @include media($large-screen) {
+      @include span-columns(4);
+      background-position: bottom;
+      background-size: cover;
+    }
+  }
+
   .side-image-content {
     @include span-columns(12);
     padding: 1em 1em 4em 1em;

@@ -38,32 +38,37 @@
 </div>
 
 <div class="side-image">
-  <div class="images-wrapper-owm">
+  <div class="images-wrapper-chute">
   </div>
     <div class="side-image-content">
       <h1>Simple and Modular</h1>
-      <p>What began as a temporary redesign turned into a complete overhaul. Our customers were delighted to have a streamlined design to simplify the most daunting and stressful aspects of their businesses. We implemented the ability for our users to split shipments and orders to multiple locations, and finance their purchases directly within the platform. We used this platform and simplicity to onboard the largest franchise group in the country, leveraging the unique flexible payment platform and invoicing features.</p>
-  </div>
-</div>
-
-<div class="project-chute-full">
-  Test
+      <p>
+        One of Chute's core selling points is the flexibility and the adaptability of the platform for different types of social media campaigns. It can scale with you and your team from individual users, to teams of dozens of dedicated moderators for Super Bowl campaigns.
+      </p>
+      <p>
+        Our design and architecture, while intricate, was not quite as adaptable when adding or updating features. Developers would have to inspect multiple APIs, and our platform was not component based, which meant updating something could potentially break something else. Our team collaborated with engineering almost daily on a design system and feature set that would be both beneficial to product and engineering.
+      </p>
+      <p>
+        We ended up building our redesign using modular components that had major elements reused throughout the platform. Our Image Lightboxes would consist of the same major component as a Rights Request Lightbox, which previously shared very little code.
+      </p>
+    </div>
 </div>
 
 <div class="project">
 	<div class="project-inner">
 		<div class="project-copy">
       <article class="type-system-serif-project">
-        <h1>Not Quite SaaS</h1>
+        <h1>Enterprise State of Mind</h1>
         <p>
-          When creating B2B apps, there's generally very few ways that are commonly excepted for small startups to go – giving your app away for free, or charging a monthly rate – but we decided that these methods wouldn't work for low-income small businesses.
+          Chute has always had the unique ability to support enterprise and small businesses alike, something a lot of companies strive to do. Throughout our design process, we wanted to ensure that our new and improved experience could bring this to a whole new level.
+        <p>
+          Initially, we had experimented with more dramatic changes to the way our platform functioned, but instead realized our complexity was actually what customers loved most. We wanted our individual users to be able to get up and running with as little assistance as possible, employing the use of machine learning, recommendation algorithms, templates, and focused a great amount on our onboarding process and messaging.
         </p>
         <p>
-          With many of our users being bakers, bike shop owners, and high-volume low-margin businesses, we found a better solution to keep their costs low was a percentage based model. This can be seen in the last of the 3 cards below.
+          We made sure to involve our customers every step of the way, from wireframes, to interviews, and personas based on each of our core users from our main segments: E-Commerce, Travel & Destination Marketing Organizations, and Enterprise. This helped us streamline our goals and keep focused on what mattered most to our users, and they truly felt like they were part of our process.
         </p>
         <p>
-          This created interesting design and feature challenges to overcome during the imagination phase, and as a team, we discovered many diverse ideas to help increase conversions and complete sales. It was a much appreciated divergence from the traditional SASS model, which allowed for new processes, obervations, and interactions to be employed.
-        </p>
+          One of the best parts of the process was being included into what our customers called their "Chute Family." This was a testament to not only how important our customers were to us, but how important and involved they were in our process.
       </article>
 		</div>
 	</div>
@@ -72,19 +77,25 @@
 <div class="cards">
   <div class="card">
     <div class="card-image">
-      <img src="../img/owm-catalog-sm.jpg" alt="">
+      <a data-fancybox="gallery" href="../img/chute-library.png">
+        <img src="../img/chute-library-sm.png" alt="">
+      </a>
     </div>
   </div>
 
   <div class="card">
     <div class="card-image">
-      <img src="../img/owm-preview-sm.jpg" alt="">
+      <a data-fancybox="gallery" href="../img/chute-rights.png">
+        <img src="../img/chute-rights-sm.png" alt="">
+      </a>
     </div>
   </div>
 
   <div class="card">
     <div class="card-image">
-      <img src="../img/owm-signup-sm.png" alt="">
+      <a data-fancybox="gallery" href="../img/chute-workflow.png">
+        <img src="../img/chute-workflow-sm.png" alt="">
+      </a>
     </div>
   </div>
 </div>

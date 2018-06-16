@@ -63,19 +63,32 @@
 <div class="cards">
   <div class="card">
     <div class="card-image">
-      <img src="../img/banjo-home.png" alt="">
+      <a data-fancybox="gallery" href="../img/banjo-home.png">
+        <img src="../img/banjo-home.png" alt="">
+      </a>
     </div>
   </div>
 
   <div class="card">
     <div class="card-image">
-      <img src="../img/banjo-music.png" alt="">
+      <a data-fancybox="gallery" href="../img/banjo-music.png">
+        <img src="../img/banjo-music.png" alt="">
+      </a>
     </div>
   </div>
 
   <div class="card">
     <div class="card-image">
-      <img src="../img/banjo-notifications.png" alt="">
+      <a data-fancybox="gallery" href="../img/banjo-notifications.png">
+        <img src="../img/banjo-notifications.png" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <a data-fancybox="gallery" href="../img/banjo-feed.png">
+        <img src="../img/banjo-feed.png" alt="">
+      </a>
     </div>
   </div>
 </div>

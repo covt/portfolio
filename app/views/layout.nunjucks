@@ -7,10 +7,14 @@
   <link rel="icon" type="image/png" href="/img/favicon.png">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-  <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!--Fancybox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
   <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+  <!--/Fancybox-->
+
   <script src="/js/script.js"></script>
   <script src="https://use.typekit.net/jik5emo.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -30,8 +34,8 @@
         <li class="nav-link"><a href="/">Home</a></li>
         <li class="nav-link more"><a href="javascript:void(0)">Projects</a>
           <ul class="submenu">
+            <li><a href="/chute">Chute</a></li>
             <li><a href="/banjo">Banjo</a></li>
-            <li><a href="javascript:void(0)">Reactor Publishing</a></li>
             <li><a href="/withme">WithMe</a></li>
             <li><a href="javascript:void(0)">Downtown Project</a></li>
             </li>
