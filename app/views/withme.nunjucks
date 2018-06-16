@@ -8,7 +8,7 @@
             WithMe
         </h1>
         <p>
-          WithMe - Business Tools made with passion for yours. WithMe™ Business provides solutions that simplify how you manage your most critical everyday operations. 
+          WithMe - Business Tools made with passion for yours. WithMe™ Business provides solutions that simplify how you manage your most critical everyday operations.
         </p>
   </div>
   </div>
@@ -62,19 +62,25 @@
 <div class="cards">
   <div class="card">
     <div class="card-image">
-      <img src="../img/owm-catalog-sm.jpg" alt="">
+      <a data-fancybox="gallery" href="../img/owm-catalog.jpg">
+        <img src="../img/owm-catalog-sm.jpg" alt="">
+      </a>
     </div>
   </div>
 
   <div class="card">
     <div class="card-image">
-      <img src="../img/owm-preview-sm.jpg" alt="">
+      <a data-fancybox="gallery" href="../img/owm-preview.jpg">
+        <img src="../img/owm-preview-sm.jpg" alt="">
+      </a>
     </div>
   </div>
 
   <div class="card">
     <div class="card-image">
-      <img src="../img/owm-signup-sm.png" alt="">
+      <a data-fancybox="gallery" href="../img/owm-signup.png">
+        <img src="../img/owm-signup-sm.png" alt="">
+      </a>
     </div>
   </div>
 </div>

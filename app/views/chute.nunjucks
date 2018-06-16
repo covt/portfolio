@@ -104,15 +104,14 @@
 	<div class="project-inner">
 		<div class="project-copy">
       <article class="type-system-serif-project">
-        <h1>Lessons Learned – Small Teams Can Move Fast</h1>
+        <h1>Knowledge Gained – Relationships Matter</h1>
         <p>
-          At WithMe, our team was only about 20 people when I joined. The development and product teams combined were about 9 people including Quality Assurance. When we were instructed to rebuild most of the application from scratch I may have had some doubts on such a short timeframe and an even smaller team. There were many roles which needed to be filled to allow us to all focus on our individual areas 100% of our time.
+          Chute was the first compant I worked with where the customers were as important as the employees in our office. Every step of the way, we made sure to collect input and ensure our customers voices were heard. Not only did this simplify our product process, but by involving our users, they felt as attached to us as individuals as much as our product.
         </p>
         <p>
-          While working with a startup, payroll is often the largest burn rate, and hiring isn't always a solution. This means that everyone has to wear many different hats in which they many not always be comfortable with. A UX Designer doing Quality Assurance. A Front End Developer writing Database Code, etc. The comradery that is created by working together in difficult roles in phenominal, and increases learning productivity exponentially.
-        </p>
+          Throughout our redesign process, customers that tested our prototypes and were able to preview our new platform were significantly less likely to churn. In fact, we had nearly zero net churn for several quarters in a row, and even growing our business through word of mouth.
         <p>
-          My largest take away from working as a UX Designer at WithMe, is smaller teams are often the ones to make the impossible a reality, and as we grow as a company together, the larger the company becomes the more you realize how much you have each grown in many different roles within the company. Small Teams may be the most efficient creators and learners, and the comradery that's created is often the same thing that helps early products become so successful.
+          While I have always designed for users, designing with users can be beneficial for many reasons. Who uses your platform more than those that require it for their daily routine? Users knew what to expect as features were rolled out, and they felt as though it was as much their product as ours. Not only that – it enabled us to pin point exactly what it was that users wanted through interative prototyping. While this process was slightly more time intensive, the tradeoffs in building relations was invaluable for our company.
         </p>
       </article>
 		</div>
