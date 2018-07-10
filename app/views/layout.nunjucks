@@ -37,7 +37,6 @@
             <li><a href="/chute">Chute</a></li>
             <li><a href="/banjo">Banjo</a></li>
             <li><a href="/withme">WithMe</a></li>
-            <li><a href="javascript:void(0)">Downtown Project</a></li>
             </li>
           </ul>
         </li>
@@ -49,7 +48,7 @@
         </li>
         <li class="nav-link"><a href="https://dribbble.com/chrisoconnell">Dribbble</a></li>
         <li class="nav-link"><a href="https://github.com/covt">GitHub</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Blog</a></li>
+        <li class="nav-link"><a href="http://linkedin.com/in/chris-o-connell-3959a934/">LinkedIn</a></li>
       </ul>
     </nav>
   </div>
